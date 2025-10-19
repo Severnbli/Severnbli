@@ -29,7 +29,7 @@ I enjoy building interactive applications and game prototyping.
 
 <div align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=cs,unity,c,cpp,java,py,postgres,git,linux" />
+    <img src="https://skillicons.dev/icons?i=cs,unity,c,cpp,java,py,postgres,git,linux,ps" />
   </a>
 </div>
 
