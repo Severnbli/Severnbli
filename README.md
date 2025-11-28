@@ -5,56 +5,6 @@
 <br>
 
 <div align="center">
-  <h1>🧰 About Me</h1>
-</div>
-
-<br>
-
-I'm an aspiring software engineer currently focused on **C#, .NET and Unity**.  
-I enjoy building interactive applications and game prototyping.
-
-<br>
-
-<div align="center">
-  <h1>🛠️ Skills</h1>
-</div>
-
-<br>
-
-<div align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=cs,unity,c,cpp,java,py,postgres,git,linux,ps" />
-  </a>
-</div>
-
-<br>
-
-<div align="center">
-  <h1>📈 Stats</h1>
-</div>
-
-<br>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Severnbli&show_icons=true&theme=dark&hide_border=true" width="420" hspace="10" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Severnbli&theme=dark&hide_border=true" width="420" hspace="10" />
-</p>
-
-<br>
-
-<div align="center">
-  <h1>🌱 Contribution Graph</h1>
-</div>
-
-<br>
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Severnbli&theme=github-dark&hide_border=true" alt="Contribution Graph" />
-</div>
-
-<br>
-
-<div align="center">
   <h1>✉️ Contact Me</h1>
 </div>
 
@@ -77,5 +27,35 @@ I enjoy building interactive applications and game prototyping.
     <img src="https://img.shields.io/badge/itch.io-FA5C5C.svg?style=for-the-badge&logo=itchdotio&logoColor=white" height="30" hspace="10"/>
   </a>
 </p>
+
+<br>
+
+<div align="center">
+  <h1>🛠️ Skills</h1>
+</div>
+
+<br>
+
+<div align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=cs,dotnet,unity,c,cpp,java,py,postgres,git,linux,ps" />
+  </a>
+</div>
+
+<br>
+
+<div align="center">
+  <h1>📈 Stats</h1>
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Severnbli&theme=dark&hide_border=true" hspace="10" />
+</div>
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Severnbli&theme=github-compact&hide_border=true&hide_title=true" />
+</div>
 
 <br>
