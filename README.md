@@ -36,8 +36,8 @@ I enjoy building interactive applications and game prototyping.
 <br>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Severnbli&show_icons=true&theme=dark&hide_border=true" hspace="10" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Severnbli&theme=dark&hide_border=true" hspace="10" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Severnbli&show_icons=true&theme=dark&hide_border=true" width="420" hspace="10" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Severnbli&theme=dark&hide_border=true" width="420" hspace="10" />
 </p>
 
 <br>
