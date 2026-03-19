@@ -11,9 +11,11 @@
 <br>
 
 <p align="center">
+  
+  [//]: # (
   <a href="https://www.linkedin.com/in/usevalad-buben-36a62b388/" target="_blank">
     <img src="https://img.shields.io/badge/linkedin-0A66C2.svg?style=for-the-badge&logo=linkedin&logoColor=white" height="30" hspace="10"/>
-  </a>
+  </a>)
 
   <a href="mailto:usevaladbuben@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/gmail-f2a60c.svg?style=for-the-badge&logo=gmail&logoColor=white" height="30" hspace="10"/>
