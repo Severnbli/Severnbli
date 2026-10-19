@@ -56,8 +56,4 @@
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Severnbli&theme=dark&hide_border=true" hspace="10" />
 </div>
 
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Severnbli&theme=github-compact&hide_border=true&hide_title=true" />
-</div>
-
 <br>
