@@ -12,7 +12,7 @@
 
 <br>
 
-## 👾 About
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:3b1f6e,100:0d1117&height=64&text=%E2%80%94%20ABOUT%20%E2%80%94&fontSize=26&fontColor=e0d4ff&fontAlignY=55" width="100%"/>
 
 I like having an idea in the morning and a working thing by the evening. Then I keep poking at it until it's actually good.
 
@@ -20,7 +20,7 @@ Mostly that means **Unity games and editor tools**, **Telegram bots** for friend
 
 <br>
 
-## 🚀 Projects
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:3b1f6e,100:0d1117&height=64&text=%E2%80%94%20PROJECTS%20%E2%80%94&fontSize=26&fontColor=e0d4ff&fontAlignY=55" width="100%"/>
 
 <p align="center">
   <a href="https://github.com/Severnbli/localization-codegen"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Severnbli&repo=localization-codegen&bg_color=0d1117&title_color=c792ea&text_color=a9b1d6&icon_color=7fdbca&border_color=30363d&description_lines_count=2" /></a>
@@ -33,7 +33,7 @@ Mostly that means **Unity games and editor tools**, **Telegram bots** for friend
 
 <br>
 
-## 📊 Stats
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:3b1f6e,100:0d1117&height=64&text=%E2%80%94%20STATS%20%E2%80%94&fontSize=26&fontColor=e0d4ff&fontAlignY=55" width="100%"/>
 
 <p align="center">
   <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Severnbli&show_icons=true&count_private=true&rank_icon=github&card_width=437&bg_color=0d1117&title_color=c792ea&text_color=a9b1d6&icon_color=7fdbca&ring_color=c792ea&border_color=30363d" />
