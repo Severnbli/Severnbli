@@ -12,16 +12,11 @@
 
 <br>
 
-<img src="assets/about.svg" width="100%"/>
-
 <h3 align="center">
-  I like having an idea in the morning<br>
-  and a working thing by the evening.
+  “I like having an idea in the morning<br>
+  and a working thing by the evening.<br>
+  <i>Then I keep poking at it until it's actually good.</i>”
 </h3>
-
-<p align="center">
-  <i>Then I keep poking at it until it's actually good.</i>
-</p>
 
 <br>
 
