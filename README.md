@@ -14,9 +14,14 @@
 
 <img src="assets/about.svg" width="100%"/>
 
-I like having an idea in the morning and a working thing by the evening. Then I keep poking at it until it's actually good.
+<h3 align="center">
+  I like having an idea in the morning<br>
+  and a working thing by the evening.
+</h3>
 
-Mostly that means **Unity games and editor tools**, **Telegram bots** for friends and uni, and the odd **hardware project** or **tiny website** when something catches my eye.
+<p align="center">
+  <i>Then I keep poking at it until it's actually good.</i>
+</p>
 
 <br>
 
