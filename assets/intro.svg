@@ -17,14 +17,14 @@
 <linearGradient id="pg" x1="0" x2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0"/><stop offset=".5" stop-color="#ffe3f3"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
 </defs>
 <g class="flick">
-<text x="800" y="62" text-anchor="middle" class="t" font-size="52" letter-spacing="8" fill="none" stroke="#c792ea" stroke-width="2.6" filter="url(#glow)">USEVALAD BUBEN</text>
-<text x="800" y="62" text-anchor="middle" class="t" font-size="52" letter-spacing="8" fill="none" stroke="#ffffff" stroke-width="1">USEVALAD BUBEN</text>
+<text x="800" y="112" text-anchor="middle" class="t" font-size="52" letter-spacing="8" fill="none" stroke="#c792ea" stroke-width="2.6" filter="url(#glow)">USEVALAD BUBEN</text>
+<text x="800" y="112" text-anchor="middle" class="t" font-size="52" letter-spacing="8" fill="none" stroke="#ffffff" stroke-width="1">USEVALAD BUBEN</text>
 </g>
-<rect x="180" y="100.4" width="236.7" height="3" fill="url(#ll)" filter="url(#glow)"/>
-<rect x="1183.3" y="100.4" width="236.7" height="3" fill="url(#lr)" filter="url(#glow)"/>
-<rect x="326.7" y="100.4" width="90" height="3" fill="url(#pg)" filter="url(#glow)"><animate attributeName="x" values="326.7;180.0;326.7" keyTimes="0;.5;1" dur="4.4s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1"/></rect><rect x="1183.3" y="100.4" width="90" height="3" fill="url(#pg)" filter="url(#glow)"><animate attributeName="x" values="1183.3;1330.0;1183.3" keyTimes="0;.5;1" dur="4.4s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1"/></rect>
-<rect x="428.7" y="95.9" width="12" height="12" transform="rotate(45 434.7 101.9)" fill="#7fdbca" filter="url(#glow)"/>
-<rect x="1159.3" y="95.9" width="12" height="12" transform="rotate(45 1165.3 101.9)" fill="#7fdbca" filter="url(#glow)"/>
-<rect x="594.4" y="97.4" width="9" height="9" transform="rotate(45 598.9 101.9)" fill="#7fdbca" filter="url(#glow)"/><rect x="930.7" y="97.4" width="9" height="9" transform="rotate(45 935.2 101.9)" fill="#7fdbca" filter="url(#glow)"/>
-<text x="466.7" y="112" class="t" font-size="28" letter-spacing="10" fill="#7fdbca" filter="url(#soft)">IDEA</text><text x="626.9" y="112" class="t" font-size="28" letter-spacing="10" fill="#7fdbca" filter="url(#soft)">PROTOTYPE</text><text x="963.2" y="112" class="t" font-size="28" letter-spacing="10" fill="#7fdbca" filter="url(#soft)">POLISH</text>
+<rect x="180" y="91.8" width="229.0" height="3" fill="url(#ll)" filter="url(#glow)"/>
+<rect x="1191.0" y="91.8" width="229.0" height="3" fill="url(#lr)" filter="url(#glow)"/>
+<rect x="319.0" y="91.8" width="90" height="3" fill="url(#pg)" filter="url(#glow)"><animate attributeName="x" values="319.0;180.0;319.0" keyTimes="0;.5;1" dur="4.4s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1"/></rect><rect x="1191.0" y="91.8" width="90" height="3" fill="url(#pg)" filter="url(#glow)"><animate attributeName="x" values="1191.0;1330.0;1191.0" keyTimes="0;.5;1" dur="4.4s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1"/></rect>
+<rect x="421.0" y="87.3" width="12" height="12" transform="rotate(45 427.0 93.3)" fill="#7fdbca" filter="url(#glow)"/>
+<rect x="1167.0" y="87.3" width="12" height="12" transform="rotate(45 1173.0 93.3)" fill="#7fdbca" filter="url(#glow)"/>
+<rect x="594.4" y="31.4" width="9" height="9" transform="rotate(45 598.9 35.9)" fill="#7fdbca" filter="url(#glow)"/><rect x="930.7" y="31.4" width="9" height="9" transform="rotate(45 935.2 35.9)" fill="#7fdbca" filter="url(#glow)"/>
+<text x="466.7" y="46" class="t" font-size="28" letter-spacing="10" fill="#7fdbca" filter="url(#soft)">IDEA</text><text x="626.9" y="46" class="t" font-size="28" letter-spacing="10" fill="#7fdbca" filter="url(#soft)">PROTOTYPE</text><text x="963.2" y="46" class="t" font-size="28" letter-spacing="10" fill="#7fdbca" filter="url(#soft)">POLISH</text>
 </svg>
