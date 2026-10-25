@@ -10,16 +10,6 @@
   <a href="mailto:usevaladbuben@gmail.com"><img src="https://img.shields.io/badge/email-0d1117?style=for-the-badge&logo=gmail&logoColor=F2A60C" /></a>
 </p>
 
-<br>
-
-<h3 align="center">
-  “I like having an idea in the morning<br>
-  and a working thing by the evening.<br>
-  <i>Then I keep poking at it until it's actually good.</i>”
-</h3>
-
-<br>
-
 <img src="assets/projects.svg" width="100%"/>
 
 <p align="center">
