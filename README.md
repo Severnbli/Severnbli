@@ -1,4 +1,4 @@
-<img src="assets/hello.svg" width="100%"/>
+<img src="assets/hi.svg" width="100%"/>
 
 <p align="center">
   <a href="https://severnbli.itch.io/"><img src="https://img.shields.io/badge/itch.io-0d1117?style=for-the-badge&logo=itchdotio&logoColor=FA5C5C" /></a>
