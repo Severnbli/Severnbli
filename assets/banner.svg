@@ -11,6 +11,7 @@
 <defs>
 <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
 <feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="soft" x="-5%" y="-30%" width="110%" height="160%"><feGaussianBlur stdDeviation="1.6" result="b"/><feComponentTransfer in="b" result="b"><feFuncA type="linear" slope=".45"/></feComponentTransfer><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
 <linearGradient id="ll" x1="0" x2="1"><stop offset="0" stop-color="#ff79c6" stop-opacity="0"/><stop offset="1" stop-color="#ff79c6"/></linearGradient>
 <linearGradient id="lr" x1="0" x2="1"><stop offset="0" stop-color="#ff79c6"/><stop offset="1" stop-color="#ff79c6" stop-opacity="0"/></linearGradient>
 </defs>
@@ -23,5 +24,5 @@
 <rect x="428.7" y="151.9" width="12" height="12" transform="rotate(45 434.7 157.9)" fill="#7fdbca" filter="url(#glow)"/>
 <rect x="1159.3" y="151.9" width="12" height="12" transform="rotate(45 1165.3 157.9)" fill="#7fdbca" filter="url(#glow)"/>
 <rect x="594.4" y="153.4" width="9" height="9" transform="rotate(45 598.9 157.9)" fill="#7fdbca" filter="url(#glow)"/><rect x="930.7" y="153.4" width="9" height="9" transform="rotate(45 935.2 157.9)" fill="#7fdbca" filter="url(#glow)"/>
-<text x="466.7" y="168" class="t" font-size="28" letter-spacing="10" fill="#7fdbca" filter="url(#glow)">IDEA</text><text x="626.9" y="168" class="t" font-size="28" letter-spacing="10" fill="#7fdbca" filter="url(#glow)">PROTOTYPE</text><text x="963.2" y="168" class="t" font-size="28" letter-spacing="10" fill="#7fdbca" filter="url(#glow)">POLISH</text>
+<text x="466.7" y="168" class="t" font-size="28" letter-spacing="10" fill="#7fdbca" filter="url(#soft)">IDEA</text><text x="626.9" y="168" class="t" font-size="28" letter-spacing="10" fill="#7fdbca" filter="url(#soft)">PROTOTYPE</text><text x="963.2" y="168" class="t" font-size="28" letter-spacing="10" fill="#7fdbca" filter="url(#soft)">POLISH</text>
 </svg>
