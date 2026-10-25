@@ -1,7 +1,7 @@
 <img src="assets/header.svg" width="100%"/>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=2800&pause=900&color=7FDBCA&center=true&vCenter=true&width=520&height=40&lines=making+games+in+Unity;writing+Telegram+bots;wiring+up+ESP32+boards;building+whatever+I'm+curious+about" alt="what I do" />
+  <img src="assets/typing.svg" width="100%" alt="what I do" />
 </p>
 
 <p align="center">
@@ -41,4 +41,3 @@ Mostly that means **Unity games and editor tools**, **Telegram bots** for friend
   <img width="98.5%" src="https://github-readme-streak-stats.herokuapp.com/?card_width=820&card_height=170&user=Severnbli&background=0d1117&border=30363d&ring=c792ea&fire=7fdbca&currStreakNum=e0d4ff&sideNums=e0d4ff&currStreakLabel=c792ea&sideLabels=a9b1d6&dates=6e7681&stroke=30363d" />
 </p>
 
-<img src="assets/footer.svg" width="100%"/>
