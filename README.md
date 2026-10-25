@@ -1,4 +1,4 @@
-<img src="assets/logo.svg" width="100%"/>
+<img src="assets/head.svg" width="100%"/>
 
 <p align="center">
   <a href="https://severnbli.itch.io/"><img src="https://img.shields.io/badge/itch.io-0d1117?style=for-the-badge&logo=itchdotio&logoColor=FA5C5C" /></a>
@@ -6,7 +6,7 @@
   <a href="mailto:usevaladbuben@gmail.com"><img src="https://img.shields.io/badge/email-0d1117?style=for-the-badge&logo=gmail&logoColor=F2A60C" /></a>
 </p>
 
-<img src="assets/section-projects.svg" width="100%"/>
+<img src="assets/sec-projects.svg" width="100%"/>
 
 <p align="center">
   <a href="https://github.com/Severnbli/localization-codegen"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Severnbli&repo=localization-codegen&bg_color=0d1117&title_color=c792ea&text_color=a9b1d6&icon_color=7fdbca&border_color=30363d&description_lines_count=2" /></a>
@@ -17,7 +17,7 @@
   <a href="https://github.com/Severnbli/queue_bot"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Severnbli&repo=queue_bot&bg_color=0d1117&title_color=c792ea&text_color=a9b1d6&icon_color=7fdbca&border_color=30363d&description_lines_count=2" /></a>
 </p>
 
-<img src="assets/section-stats.svg" width="100%"/>
+<img src="assets/sec-stats.svg" width="100%"/>
 
 <p align="center">
   <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Severnbli&show_icons=true&count_private=true&rank_icon=github&card_width=437&bg_color=0d1117&title_color=c792ea&text_color=a9b1d6&icon_color=7fdbca&ring_color=c792ea&border_color=30363d" />
