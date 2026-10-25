@@ -1,22 +1,50 @@
 <div align="center">
   <h1>Hi there, I'm Usevalad 👋</h1>
+  <p><b>Explorer of ideas.</b> I come up with things, build them with AI as a co-pilot, and polish them until they feel right.</p>
 </div>
 
 <br>
+
+## 🧭 How I work
+
+- 💡 **Idea first.** It could be a game mechanic, a Telegram bot, a timer on a microcontroller, or a small website.
+- 🤖 **Build fast.** I prototype with AI tools and get a working version out quickly.
+- ✨ **Polish.** I keep iterating until the result is clean, useful and something I'm proud of.
+
+I'm not tied to one stack. The most interesting part is figuring out *what* to build and *why*.
+
+<br>
+
+## 🔬 Things I've explored
+
+| Project | What it is |
+| --- | --- |
+| [localization-codegen](https://github.com/Severnbli/localization-codegen) | Generates C# classes and properties from Unity Localization tables |
+| [smart-merge-registrator](https://github.com/Severnbli/smart-merge-registrator) | Manage Unity Smart Merge right from the Editor |
+| [bell-timer](https://github.com/Severnbli/bell-timer) | Programmable bell schedule on ESP32 |
+| [dmb-timers](https://github.com/Severnbli/dmb-timers) | A website for posting demob countdown timers |
+| [nAlbum](https://github.com/Severnbli/nAlbum) | Telegram bot for creating and sharing photo and video albums |
+| [queue_bot](https://github.com/Severnbli/queue_bot) | Telegram bot that creates and manages queues |
+| [rusguard-importer](https://github.com/Severnbli/rusguard-importer) | Quickly add and edit RusGuard access-control profiles |
+| [rockit](https://github.com/Severnbli/rockit) | Unity 2D puzzle-platformer about putting order in space |
+
+More games are on [itch.io](https://severnbli.itch.io/).
+
+<br>
+
+## 🛠️ Tools I reach for
 
 <div align="center">
-  <h1>✉️ Contact Me</h1>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=cs,dotnet,unity,py,kotlin,java,cpp,c,html,postgres,git,linux" />
+  </a>
 </div>
 
 <br>
 
-<p align="center">
-  
-  [//]: # (
-  <a href="https://www.linkedin.com/in/usevalad-buben-36a62b388/" target="_blank">
-    <img src="https://img.shields.io/badge/linkedin-0A66C2.svg?style=for-the-badge&logo=linkedin&logoColor=white" height="30" hspace="10"/>
-  </a>)
+## ✉️ Contact me
 
+<p align="center">
   <a href="mailto:usevaladbuben@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/gmail-f2a60c.svg?style=for-the-badge&logo=gmail&logoColor=white" height="30" hspace="10"/>
   </a>
@@ -32,28 +60,8 @@
 
 <br>
 
-<div align="center">
-  <h1>🛠️ Skills</h1>
-</div>
-
-<br>
+## 📈 Stats
 
 <div align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=cs,dotnet,unity,c,cpp,java,py,postgres,git,linux,ps" />
-  </a>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Severnbli&theme=dark&hide_border=true" />
 </div>
-
-<br>
-
-<div align="center">
-  <h1>📈 Stats</h1>
-</div>
-
-<br>
-
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Severnbli&theme=dark&hide_border=true" hspace="10" />
-</div>
-
-<br>
