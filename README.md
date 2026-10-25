@@ -17,8 +17,6 @@
   <a href="https://github.com/Severnbli/queue_bot"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Severnbli&repo=queue_bot&bg_color=0d1117&title_color=c792ea&text_color=a9b1d6&icon_color=7fdbca&border_color=30363d&description_lines_count=2" /></a>
 </p>
 
-<br>
-
 <img src="assets/stats.svg" width="100%"/>
 
 <p align="center">
