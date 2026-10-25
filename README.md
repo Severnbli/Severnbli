@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=slice&color=0:0d1117,50:5b2a9e,100:0d1117&height=200&section=header&text=Usevalad%20Buben&fontSize=60&fontColor=e0d4ff&fontAlignY=40&desc=idea%20%E2%86%92%20prototype%20%E2%86%92%20polish&descSize=18&descAlignY=62&animation=twinkling" width="100%"/>
+<img src="assets/header.svg" width="100%"/>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=2800&pause=900&color=7FDBCA&center=true&vCenter=true&width=520&height=40&lines=making+games+in+Unity;writing+Telegram+bots;wiring+up+ESP32+boards;building+whatever+I'm+curious+about" alt="what I do" />
@@ -12,7 +12,7 @@
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:3b1f6e,100:0d1117&height=32&text=%E2%80%94%20ABOUT%20%E2%80%94&fontSize=26&fontColor=e0d4ff&fontAlignY=55" width="100%"/>
+<img src="assets/about.svg" width="100%"/>
 
 I like having an idea in the morning and a working thing by the evening. Then I keep poking at it until it's actually good.
 
@@ -20,7 +20,7 @@ Mostly that means **Unity games and editor tools**, **Telegram bots** for friend
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:3b1f6e,100:0d1117&height=32&text=%E2%80%94%20PROJECTS%20%E2%80%94&fontSize=26&fontColor=e0d4ff&fontAlignY=55" width="100%"/>
+<img src="assets/projects.svg" width="100%"/>
 
 <p align="center">
   <a href="https://github.com/Severnbli/localization-codegen"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Severnbli&repo=localization-codegen&bg_color=0d1117&title_color=c792ea&text_color=a9b1d6&icon_color=7fdbca&border_color=30363d&description_lines_count=2" /></a>
@@ -33,7 +33,7 @@ Mostly that means **Unity games and editor tools**, **Telegram bots** for friend
 
 <br>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:3b1f6e,100:0d1117&height=32&text=%E2%80%94%20STATS%20%E2%80%94&fontSize=26&fontColor=e0d4ff&fontAlignY=55" width="100%"/>
+<img src="assets/stats.svg" width="100%"/>
 
 <p align="center">
   <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Severnbli&show_icons=true&count_private=true&rank_icon=github&card_width=437&bg_color=0d1117&title_color=c792ea&text_color=a9b1d6&icon_color=7fdbca&ring_color=c792ea&border_color=30363d" />
@@ -41,4 +41,4 @@ Mostly that means **Unity games and editor tools**, **Telegram bots** for friend
   <img width="98.5%" src="https://github-readme-streak-stats.herokuapp.com/?card_width=820&card_height=170&user=Severnbli&background=0d1117&border=30363d&ring=c792ea&fire=7fdbca&currStreakNum=e0d4ff&sideNums=e0d4ff&currStreakLabel=c792ea&sideLabels=a9b1d6&dates=6e7681&stroke=30363d" />
 </p>
 
-<img src="https://capsule-render.vercel.app/api?type=slice&color=0:0d1117,50:5b2a9e,100:0d1117&height=110&section=footer&reversal=true" width="100%"/>
+<img src="assets/footer.svg" width="100%"/>
