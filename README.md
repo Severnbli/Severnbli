@@ -1,7 +1,7 @@
 <img src="assets/header.svg" width="100%"/>
 
 <p align="center">
-  <img src="assets/sign.svg" width="100%" alt="what I do" />
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=600&size=22&duration=2500&pause=1200&color=FF79C6&center=true&vCenter=true&width=640&height=45&lines=making+games+in+Unity;writing+Telegram+bots;wiring+up+ESP32+boards;it+works+on+my+machine;turning+coffee+into+commits;fixing+bugs+I+made+yesterday;starting+yet+another+side+project;arguing+with+the+Unity+Editor;Ctrl%2BZ+is+my+best+friend;googling+the+error+message;renaming+variables+for+fun;deleting+node_modules+again;it%27s+not+a+bug%2C+it%27s+a+feature;commit+message%3A+fixed+stuff;waiting+for+Unity+to+compile...;pushing+to+main+on+a+Friday;explaining+code+to+a+rubber+duck;one+more+quick+fix%2C+I+promise;TODO%3A+write+this+line+later;spawning+1000+enemies+by+accident;making+the+jump+feel+juicy;reading+docs+after+it+broke;my+bot+is+smarter+than+me;soldering+at+3+AM;who+wrote+this%3F+oh%2C+it+was+me;ESP32+rebooted.+again.;99+little+bugs+in+the+code...;finishing+side+projects+%28rare%29" alt="what I do" />
 </p>
 
 <p align="center">
