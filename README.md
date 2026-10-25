@@ -1,7 +1,7 @@
 <img src="assets/header.svg" width="100%"/>
 
 <p align="center">
-  <img src="assets/typing.svg" width="100%" alt="what I do" />
+  <img src="assets/status.svg" width="100%" alt="what I do" />
 </p>
 
 <p align="center">
