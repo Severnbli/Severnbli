@@ -1,4 +1,4 @@
-<img src="assets/whoami.svg" width="100%"/>
+<img src="assets/header-main.svg" width="100%"/>
 
 <p align="center">
   <a href="https://severnbli.itch.io/"><img src="https://img.shields.io/badge/itch.io-0d1117?style=for-the-badge&logo=itchdotio&logoColor=FA5C5C" /></a>
@@ -6,7 +6,7 @@
   <a href="mailto:usevaladbuben@gmail.com"><img src="https://img.shields.io/badge/email-0d1117?style=for-the-badge&logo=gmail&logoColor=F2A60C" /></a>
 </p>
 
-<img src="assets/sec-projects.svg" width="100%"/>
+<img src="assets/title-projects.svg" width="100%"/>
 
 <p align="center">
   <a href="https://github.com/Severnbli/magic-off"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Severnbli&repo=magic-off&bg_color=0d1117&title_color=c792ea&text_color=a9b1d6&icon_color=7fdbca&border_color=30363d&description_lines_count=2" /></a>
@@ -17,7 +17,7 @@
   <a href="https://github.com/Severnbli/rockit"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Severnbli&repo=rockit&bg_color=0d1117&title_color=c792ea&text_color=a9b1d6&icon_color=7fdbca&border_color=30363d&description_lines_count=2" /></a>
 </p>
 
-<img src="assets/sec-stats.svg" width="100%"/>
+<img src="assets/title-stats.svg" width="100%"/>
 
 <p align="center">
   <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Severnbli&show_icons=true&count_private=true&rank_icon=github&card_width=437&bg_color=0d1117&title_color=c792ea&text_color=a9b1d6&icon_color=7fdbca&ring_color=c792ea&border_color=30363d" />

@@ -17,11 +17,10 @@
 </defs>
 <rect x="180" y="31.5" width="380" height="3" fill="url(#ll)" filter="url(#glow)"/>
 <rect x="1040" y="31.5" width="380" height="3" fill="url(#lr)" filter="url(#glow)"/>
-<rect x="470.0" y="31.5" width="90" height="3" fill="url(#pg)" filter="url(#glow)"><animate attributeName="x" values="470.0;180.0;470.0" keyTimes="0;.5;1" dur="4.4s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1"/></rect><rect x="1040.0" y="31.5" width="90" height="3" fill="url(#pg)" filter="url(#glow)"><animate attributeName="x" values="1040.0;1330.0;1040.0" keyTimes="0;.5;1" dur="4.4s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1"/></rect>
 <rect x="582" y="27" width="12" height="12" transform="rotate(45 588 33)" fill="#7fdbca" filter="url(#glow)"/>
 <rect x="1006" y="27" width="12" height="12" transform="rotate(45 1012 33)" fill="#7fdbca" filter="url(#glow)"/>
 <g class="flick">
-<text x="800" y="47" text-anchor="middle" class="t" font-size="38" letter-spacing="12" fill="none" stroke="#c792ea" stroke-width="2.4" filter="url(#glow)">PROJECTS</text>
-<text x="800" y="47" text-anchor="middle" class="t" font-size="38" letter-spacing="12" fill="none" stroke="#ffffff" stroke-width=".9">PROJECTS</text>
+<text x="800" y="47" text-anchor="middle" class="t" font-size="38" letter-spacing="12" fill="none" stroke="#c792ea" stroke-width="2.4" filter="url(#glow)">STATS</text>
+<text x="800" y="47" text-anchor="middle" class="t" font-size="38" letter-spacing="12" fill="none" stroke="#ffffff" stroke-width=".9">STATS</text>
 </g>
 </svg>
