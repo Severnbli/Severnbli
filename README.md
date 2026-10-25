@@ -36,8 +36,8 @@ Mostly that means **Unity games and editor tools**, **Telegram bots** for friend
 ## 📊 Stats
 
 <p align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Severnbli&show_icons=true&count_private=true&rank_icon=github&card_width=400&bg_color=0d1117&title_color=c792ea&text_color=a9b1d6&icon_color=7fdbca&ring_color=c792ea&border_color=30363d" />
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Severnbli&layout=compact&langs_count=8&card_width=400&hide_progress=false&bg_color=0d1117&title_color=c792ea&text_color=a9b1d6&border_color=30363d" />
+  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Severnbli&show_icons=true&count_private=true&rank_icon=github&card_width=437&bg_color=0d1117&title_color=c792ea&text_color=a9b1d6&icon_color=7fdbca&ring_color=c792ea&border_color=30363d" />
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Severnbli&layout=compact&langs_count=8&card_width=426&hide_progress=false&bg_color=0d1117&title_color=c792ea&text_color=a9b1d6&border_color=30363d" />
   <img width="98.5%" src="https://github-readme-streak-stats.herokuapp.com/?card_width=820&card_height=170&user=Severnbli&background=0d1117&border=30363d&ring=c792ea&fire=7fdbca&currStreakNum=e0d4ff&sideNums=e0d4ff&currStreakLabel=c792ea&sideLabels=a9b1d6&dates=6e7681&stroke=30363d" />
 </p>
 
