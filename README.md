@@ -9,7 +9,6 @@
 <img src="assets/title-projects.svg" width="100%"/>
 
 <p align="center">
-  <a href="https://github.com/Severnbli/magic-off"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Severnbli&repo=magic-off&bg_color=0d1117&title_color=c792ea&text_color=a9b1d6&icon_color=7fdbca&border_color=30363d&description_lines_count=2" /></a>
   <a href="https://github.com/Severnbli/localization-codegen"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Severnbli&repo=localization-codegen&bg_color=0d1117&title_color=c792ea&text_color=a9b1d6&icon_color=7fdbca&border_color=30363d&description_lines_count=2" /></a>
   <a href="https://github.com/Severnbli/bell-timer"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Severnbli&repo=bell-timer&bg_color=0d1117&title_color=c792ea&text_color=a9b1d6&icon_color=7fdbca&border_color=30363d&description_lines_count=2" /></a>
   <a href="https://github.com/Severnbli/nAlbum"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Severnbli&repo=nAlbum&bg_color=0d1117&title_color=c792ea&text_color=a9b1d6&icon_color=7fdbca&border_color=30363d&description_lines_count=2" /></a>
