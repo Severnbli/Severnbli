@@ -33,24 +33,14 @@ DESC_COL = 46  # project description column
 
 # Commands typed (and never run) on the last prompt line, in order.
 # Each step is ("type", text), ("erase", count) or ("wait", seconds).
-# Typos hit a neighbouring QWERTY key: d for f, ^ (shift+6) for & (shift+7), j for h.
 COMMANDS = [
-    [("type", "rm -rd"), ("wait", 0.6), ("erase", 1), ("type", "f *")],
-    [("type", "git push --force origin main")],
-    [("type", ":(){ :|:^"), ("wait", 0.6), ("erase", 1), ("type", "& };:")],
-    [("type", "git add .env && git push")],
-    [("type", "shutdown -h now")],
-    [("type", ":]")],
-    [("type", "rm -rf *")],
-    [("type", "git pusj"), ("wait", 0.6), ("erase", 1), ("type", "h --force origin main")],
-    [("type", ":(){ :|:& };:")],
-    [("type", "you still here? congratulations!")],
+    [("type", "you still here? congratulations! :]")],
 ]
 TYPE_S = (0.10, 0.24)  # random delay per typed key
 ERASE_S = 0.05
 HOLD_S = 2.0
-PAUSE_S = 10.0
-LEAD_S = 15.0  # empty prompt before the first command
+PAUSE_S = 3.0  # empty prompt after each command
+LEAD_S = 120.0  # empty prompt before the first command
 # Typed by hand at the start of every loop; their output appears after Enter
 INTRO = ["ls projects/", "cat stats.txt"]
 INTRO_WAIT_S = 1.0  # cursor blinks on an empty prompt before typing
