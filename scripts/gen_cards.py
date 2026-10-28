@@ -25,6 +25,7 @@ BG, MAIN, TEXT, DIM = "#0a0a0a", "#8b3dff", "#c8a8ff", "#5b2a9e"
 COLS = 96
 FONT, CHAR_W, LINE_H = 15, 9, 22
 PAD_X, TOP = 24, 70
+DESC_COL = 46  # project description column
 
 # Commands typed (and never run) on the last prompt line, in order.
 # Each step is ("type", text), ("erase", count) or ("wait", seconds).
@@ -157,14 +158,19 @@ def projects_lines(repos):
     for name in PINS:
         r = repos[name]
         langs = [e["node"]["name"] for e in r["languages"]["edges"] if e["node"]["name"] not in HIDE_LANGS]
-        left = f"*{r['stargazerCount']:<4}{', '.join(langs[:3]) or '-':<18}"
-        # The description sits right of the columns, wrapped over two lines
-        width = COLS - 23 - len(left)
+        # The description sits right of the columns, wrapped over two lines.
+        # Columns get fixed x positions so they line up in any monospace font.
+        width = COLS - DESC_COL
         desc = textwrap.wrap(r["description"] or "no description", width) + [""]
         if len(desc) > 3:
             desc[1] = fit(" ".join(desc[1:]), width)
-        lines.append([("m", f"{name + '/':<23}"), ("", left + desc[0])])
-        lines.append([("", " " * (23 + len(left)) + desc[1])])
+        lines.append([
+            ("p", f"{name}/", 0),
+            ("", f"*{r['stargazerCount']}", 23),
+            ("", ", ".join(langs[:3]) or "-", 28),
+            ("", desc[0], DESC_COL),
+        ])
+        lines.append([("", desc[1], DESC_COL)])
     return lines
 
 
@@ -296,13 +302,19 @@ def animated_line(y, total, frames):
     return "\n".join(css), "\n".join(out)
 
 
+def span(cls, text, col=None):
+    """A text piece, optionally pinned to a character column."""
+    attrs = (f' class="{cls}"' if cls else "") + (f' x="{PAD_X + col * CHAR_W}"' if col is not None else "")
+    return f"<tspan{attrs}>{escape(text)}</tspan>" if attrs else escape(text)
+
+
 def render(lines):
     w = PAD_X * 2 + COLS * CHAR_W
     h = TOP + LINE_H * len(lines) + 24
     out = []
     for i, spans in enumerate(lines):
         if spans:
-            body = "".join(f'<tspan class="{cls}">{escape(s)}</tspan>' if cls else escape(s) for cls, s in spans)
+            body = "".join(span(*sp) for sp in spans)
             out.append(f'<text x="{PAD_X}" y="{TOP + LINE_H * i}" class="t" xml:space="preserve">{body}</text>')
     h += LINE_H
     total, frames, reboot = timeline()
@@ -312,6 +324,7 @@ def render(lines):
 <style>
 .t{{font-family:'Courier New',Courier,monospace;font-size:{FONT}px;fill:{TEXT}}}
 .m{{fill:{MAIN};font-weight:700}}
+.p{{fill:{MAIN};stroke:{MAIN};stroke-width:.6}}
 @keyframes blink{{0%,49%{{opacity:1}}50%,100%{{opacity:0}}}}
 .cur{{animation:blink 1.1s steps(1) infinite}}
 {anim_css}
