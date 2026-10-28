@@ -55,8 +55,8 @@ LEAD_S = 15.0  # empty prompt before the first command
 INTRO = ["ls projects/", "cat stats.txt"]
 INTRO_WAIT_S = 1.0  # cursor blinks on an empty prompt before typing
 
-# After the last command the console "reboots": the screen goes black, a boot
-# log plays, and the loop starts over with the console drawn again.
+# After the last command the console "reboots": a shutdown broadcast, a black
+# screen, and the loop wraps around to the boot log it starts with.
 REBOOT_CMD = "shutdown -r now"
 ENTER_S = 0.8  # pause before the reboot command "runs"
 # (appears, disappears or None to stay, text); seconds from the reboot start
@@ -79,6 +79,7 @@ BOOT = [
 MEM_STEPS = (4.2, 1.2, ["0K", "128K", "256K", "384K", "512K", "640K OK"])
 BAR_STEPS = (8.7, 2.4, 10)  # start, duration, steps
 BOOT_S = 12.8
+SHUTDOWN_S = 3.0  # BOOT entries before this play at the end of the loop, the rest at its start
 
 QUERY = """
 query($login: String!) {
@@ -204,7 +205,7 @@ def timeline():
     False (solid while typing) or None (no cursor once the command ran).
     """
     rng = random.Random(1)  # fixed seed keeps the svg stable between refreshes
-    t = 0.0
+    t = BOOT_S - SHUTDOWN_S
     intro, outputs = [], []
     for text in INTRO:
         f = [(t, t + INTRO_WAIT_S, "", True)]
@@ -253,7 +254,7 @@ def timeline():
     # The loop wraps, so the last command also neighbours the first
     for a, b in zip(finals, finals[1:] + finals[:1]):
         assert a != b, f"{a!r} is typed twice in a row"
-    total = t + BOOT_S
+    total = t + SHUTDOWN_S
     # Intro commands stay printed until the reboot clears the screen
     for f, at in zip(intro, outputs):
         f.append((at, total, f[-1][2], None))
@@ -273,8 +274,15 @@ def animated(name, total):
 
 
 def boot_screen(w, h, total, start):
-    """Black screen with a boot log, shown from start to the end of the loop."""
-    css = [keyframes("boot", [(start, total)], total)]
+    """Black screen with the shutdown broadcast from start to the end of the
+    loop, and the boot log from the beginning of the loop."""
+    booted = BOOT_S - SHUTDOWN_S
+
+    def loop_time(x):
+        # x is seconds from the reboot; the boot part wraps to the loop start
+        return start + x if x < SHUTDOWN_S else x - SHUTDOWN_S
+
+    css = [keyframes("boot", [(0, booted), (start, total)], total)]
     out = [f'<rect x="7" y="7" width="{w - 14}" height="{h - 14}" fill="{BG}" {animated("boot", total)}/>']
 
     def variants(text):
@@ -299,8 +307,8 @@ def boot_screen(w, h, total, start):
         for j, (at, variant) in enumerate(steps):
             if not variant:
                 continue
-            a = start + (at if at is not None else shown)
-            b = start + steps[j + 1][0] if j + 1 < len(steps) else start + hidden if hidden else total
+            a = loop_time(at if at is not None else shown)
+            b = loop_time(steps[j + 1][0]) if j + 1 < len(steps) else loop_time(hidden) if hidden else booted
             name = f"b{i}_{j}"
             css.append(keyframes(name, [(a, b)], total))
             body = escape(variant)
