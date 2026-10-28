@@ -2,7 +2,6 @@
 <style>
 .t{font-family:'Courier New',Courier,monospace;font-size:15px;fill:#c8a8ff}
 .m{fill:#8b3dff;font-weight:700}
-.n{fill:#8b3dff}
 @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
 .cur{animation:blink 1.1s steps(1) infinite}
 @keyframes f0{0%{opacity:0}0.0000%{opacity:1}0.5650%{opacity:0}3.1512%{opacity:1}8.8013%{opacity:0}13.2010%{opacity:1}18.8512%{opacity:0}22.1621%{opacity:1}27.8122%{opacity:0}31.9463%{opacity:1}37.5964%{opacity:0}40.6594%{opacity:1}46.3095%{opacity:0}47.6852%{opacity:1}53.3353%{opacity:0}55.5821%{opacity:1}61.2322%{opacity:0}66.1804%{opacity:1}71.8305%{opacity:0}74.4214%{opacity:1}80.0715%{opacity:0}85.1335%{opacity:1}90.7836%{opacity:0}}
@@ -178,27 +177,27 @@
 <rect x="7" y="7" width="898" height="28" fill="#8b3dff"/>
 <text x="456.0" y="26" text-anchor="middle" class="t" style="fill:#0a0a0a;font-weight:700">severnbli@github: ~</text>
 <text x="24" y="70" class="t" xml:space="preserve"><tspan class="m">severnbli@github:~$ </tspan>ls projects/</text>
-<text x="24" y="92" class="t" xml:space="preserve"><tspan class="n">localization-codegen/</tspan></text>
+<text x="24" y="92" class="t" xml:space="preserve">localization-codegen/</text>
 <text x="231" y="92" class="t" xml:space="preserve">*1</text>
 <text x="276" y="92" class="t" xml:space="preserve">C#</text>
 <text x="438" y="92" class="t" xml:space="preserve">C# classes and properties generator from Unity</text>
 <text x="438" y="114" class="t" xml:space="preserve">Localization tables</text>
-<text x="24" y="136" class="t" xml:space="preserve"><tspan class="n">bell-timer/</tspan></text>
+<text x="24" y="136" class="t" xml:space="preserve">bell-timer/</text>
 <text x="231" y="136" class="t" xml:space="preserve">*0</text>
 <text x="276" y="136" class="t" xml:space="preserve">Kotlin, C++</text>
 <text x="438" y="136" class="t" xml:space="preserve">Programmable bell schedule on ESP32</text>
 
-<text x="24" y="180" class="t" xml:space="preserve"><tspan class="n">nAlbum/</tspan></text>
+<text x="24" y="180" class="t" xml:space="preserve">nAlbum/</text>
 <text x="231" y="180" class="t" xml:space="preserve">*0</text>
 <text x="276" y="180" class="t" xml:space="preserve">C#</text>
 <text x="438" y="180" class="t" xml:space="preserve">Telegram bot for creating and sharing photo and</text>
 <text x="438" y="202" class="t" xml:space="preserve">video albums</text>
-<text x="24" y="224" class="t" xml:space="preserve"><tspan class="n">dmb-timers/</tspan></text>
+<text x="24" y="224" class="t" xml:space="preserve">dmb-timers/</text>
 <text x="231" y="224" class="t" xml:space="preserve">*0</text>
 <text x="276" y="224" class="t" xml:space="preserve">HTML, JavaScript</text>
 <text x="438" y="224" class="t" xml:space="preserve">A website for posting demob timers</text>
 
-<text x="24" y="268" class="t" xml:space="preserve"><tspan class="n">rockit/</tspan></text>
+<text x="24" y="268" class="t" xml:space="preserve">rockit/</text>
 <text x="231" y="268" class="t" xml:space="preserve">*0</text>
 <text x="276" y="268" class="t" xml:space="preserve">C#</text>
 <text x="438" y="268" class="t" xml:space="preserve">Unity 2D puzzle-platformer about putting order in</text>
@@ -207,7 +206,7 @@
 <text x="24" y="356" class="t" xml:space="preserve">contributions ...... 11574</text>
 <text x="24" y="378" class="t" xml:space="preserve">current streak ..... 10 days</text>
 <text x="24" y="400" class="t" xml:space="preserve">longest streak ..... 60 days</text>
-<text x="24" y="422" class="t" xml:space="preserve">commits (1y) ....... 9439</text>
+<text x="24" y="422" class="t" xml:space="preserve">commits (1y) ....... 9440</text>
 <text x="24" y="444" class="t" xml:space="preserve">pull requests ...... 198</text>
 <text x="24" y="466" class="t" xml:space="preserve">issues ............. 39</text>
 <text x="24" y="488" class="t" xml:space="preserve">stars .............. 3</text>

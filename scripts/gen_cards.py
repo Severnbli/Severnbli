@@ -165,7 +165,7 @@ def projects_lines(repos):
         if len(desc) > 3:
             desc[1] = fit(" ".join(desc[1:]), width)
         lines.append([
-            ("n", f"{name}/", 0),
+            ("", f"{name}/", 0),
             ("", f"*{r['stargazerCount']}", 23),
             ("", ", ".join(langs[:3]) or "-", 28),
             ("", desc[0], DESC_COL),
@@ -332,7 +332,6 @@ def render(lines):
 <style>
 .t{{font-family:'Courier New',Courier,monospace;font-size:{FONT}px;fill:{TEXT}}}
 .m{{fill:{MAIN};font-weight:700}}
-.n{{fill:{MAIN}}}
 @keyframes blink{{0%,49%{{opacity:1}}50%,100%{{opacity:0}}}}
 .cur{{animation:blink 1.1s steps(1) infinite}}
 {anim_css}
