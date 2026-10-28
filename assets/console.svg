@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="912" height="666" viewBox="0 0 912 666">
+<style>
+.t{font-family:'Courier New',Courier,monospace;font-size:15px;fill:#c8a8ff}
+.m{fill:#8b3dff;font-weight:700}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+.cur{animation:blink 1.1s steps(1) infinite}
+</style>
+<defs><pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="2" fill="#000" fill-opacity=".35"/></pattern></defs>
+<rect x="1.5" y="1.5" width="909" height="663" fill="#0a0a0a" stroke="#8b3dff" stroke-width="3"/>
+<rect x="7" y="7" width="898" height="652" fill="none" stroke="#8b3dff" stroke-width="1"/>
+<rect x="7" y="7" width="898" height="28" fill="#8b3dff"/>
+<text x="456.0" y="26" text-anchor="middle" class="t" style="fill:#0a0a0a;font-weight:700">severnbli@github: ~</text>
+<text x="24" y="70" class="t" xml:space="preserve"><tspan class="m">severnbli@github:~$ </tspan>ls projects/</text>
+<text x="24" y="92" class="t" xml:space="preserve">localization-codegen/  C#      *1   C# classes and properties generator from Unity Localizati...</text>
+<text x="24" y="114" class="t" xml:space="preserve">bell-timer/            Kotlin  *0   Programmable bell schedule on ESP32</text>
+<text x="24" y="136" class="t" xml:space="preserve">nAlbum/                C#      *0   Telegram bot for creating and sharing photo and video albums</text>
+<text x="24" y="158" class="t" xml:space="preserve">dmb-timers/            HTML    *0   A website for posting demob timers</text>
+<text x="24" y="180" class="t" xml:space="preserve">rockit/                C#      *0   Unity 2D puzzle-platformer about putting order in space</text>
+<text x="24" y="224" class="t" xml:space="preserve"><tspan class="m">severnbli@github:~$ </tspan>cat stats.txt</text>
+<text x="24" y="246" class="t" xml:space="preserve">contributions ...... 11574</text>
+<text x="24" y="268" class="t" xml:space="preserve">current streak ..... 10 days</text>
+<text x="24" y="290" class="t" xml:space="preserve">longest streak ..... 60 days</text>
+<text x="24" y="312" class="t" xml:space="preserve">commits (1y) ....... 9434</text>
+<text x="24" y="334" class="t" xml:space="preserve">pull requests ...... 198</text>
+<text x="24" y="356" class="t" xml:space="preserve">issues ............. 39</text>
+<text x="24" y="378" class="t" xml:space="preserve">stars .............. 3</text>
+<text x="24" y="400" class="t" xml:space="preserve">repositories ....... 31</text>
+<text x="24" y="444" class="t" xml:space="preserve"><tspan class="m">severnbli@github:~$ </tspan>du -sh languages/*</text>
+<text x="24" y="466" class="t" xml:space="preserve">C#             [####################################    ]  89.0%</text>
+<text x="24" y="488" class="t" xml:space="preserve">ShaderLab      [#                                       ]   3.6%</text>
+<text x="24" y="510" class="t" xml:space="preserve">Java           [#                                       ]   2.4%</text>
+<text x="24" y="532" class="t" xml:space="preserve">Python         [                                        ]   1.2%</text>
+<text x="24" y="554" class="t" xml:space="preserve">Kotlin         [                                        ]   1.2%</text>
+<text x="24" y="576" class="t" xml:space="preserve">C++            [                                        ]   0.7%</text>
+<text x="24" y="620" class="t" xml:space="preserve"><tspan class="m">severnbli@github:~$ </tspan><tspan class="m cur">&#9608;</tspan></text>
+<rect x="1.5" y="1.5" width="909" height="663" fill="url(#scan)"/>
+</svg>
