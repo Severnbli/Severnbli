@@ -50,7 +50,10 @@ TYPE_S = (0.10, 0.24)  # random delay per typed key
 ERASE_S = 0.05
 HOLD_S = 2.0
 PAUSE_S = 10.0
-LEAD_S = 1.0  # empty prompt before the first command
+LEAD_S = 15.0  # empty prompt before the first command
+# Typed by hand at the start of every loop; their output appears after Enter
+INTRO = ["ls projects/", "cat stats.txt"]
+INTRO_WAIT_S = 1.0  # cursor blinks on an empty prompt before typing
 
 # After the last command the console "reboots": the screen goes black, a boot
 # log plays, and the loop starts over with the console drawn again.
@@ -193,14 +196,29 @@ def stats_lines(user, total, current, longest):
     return [[("", f"{k} ".ljust(20, ".") + f" {v}")] for k, v in rows]
 
 
-def cmd(text):
-    return [("m", PROMPT), ("", text)]
-
-
 def timeline():
-    """Return the loop length and (start, end, typed, cursor_blinks) frames."""
+    """Return the loop length, the last prompt's frames, the reboot time, and
+    for each intro command its frames and when its output appears.
+
+    A frame is (start, end, typed, cursor) where cursor is True (blinking),
+    False (solid while typing) or None (no cursor once the command ran).
+    """
     rng = random.Random(1)  # fixed seed keeps the svg stable between refreshes
-    frames, t, typed = [], 0.0, ""
+    t = 0.0
+    intro, outputs = [], []
+    for text in INTRO:
+        f = [(t, t + INTRO_WAIT_S, "", True)]
+        t += INTRO_WAIT_S
+        for i in range(1, len(text) + 1):
+            d = rng.uniform(*TYPE_S)
+            f.append((t, t + d, text[:i], False))
+            t += d
+        f.append((t, t + ENTER_S, text, True))
+        t += ENTER_S
+        intro.append(f)
+        outputs.append(t)
+
+    frames, typed = [], ""
 
     def show(dur, blink=False):
         nonlocal t
@@ -235,7 +253,11 @@ def timeline():
     # The loop wraps, so the last command also neighbours the first
     for a, b in zip(finals, finals[1:] + finals[:1]):
         assert a != b, f"{a!r} is typed twice in a row"
-    return t + BOOT_S, frames, t
+    total = t + BOOT_S
+    # Intro commands stay printed until the reboot clears the screen
+    for f, at in zip(intro, outputs):
+        f.append((at, total, f[-1][2], None))
+    return total, frames, t, intro, outputs
 
 
 def keyframes(name, windows, total):
@@ -291,16 +313,17 @@ def boot_screen(w, h, total, start):
     return "\n".join(css), "\n".join(out)
 
 
-def animated_line(y, total, frames):
+def animated_line(prefix, y, total, frames):
     states = {}
     for start, end, typed, blink in frames:
         states.setdefault((typed, blink), []).append((start, end))
     css, out = [], []
     for i, ((typed, blink), windows) in enumerate(states.items()):
-        css.append(keyframes(f"f{i}", windows, total))
-        cursor = '<tspan class="m cur">&#9608;</tspan>' if blink else '<tspan class="m">&#9608;</tspan>'
+        name = f"{prefix}{i}"
+        css.append(keyframes(name, windows, total))
+        cursor = {True: '<tspan class="m cur">&#9608;</tspan>', False: '<tspan class="m">&#9608;</tspan>', None: ""}[blink]
         out.append(
-            f'<text x="{PAD_X}" y="{y}" class="t" xml:space="preserve" {animated(f"f{i}", total)}>'
+            f'<text x="{PAD_X}" y="{y}" class="t" xml:space="preserve" {animated(name, total)}>'
             f'<tspan class="m">{escape(PROMPT)}</tspan>{escape(typed)}{cursor}</text>'
         )
     return "\n".join(css), "\n".join(out)
@@ -322,16 +345,32 @@ def text_row(y, spans):
 
 
 def render(lines):
+    """Lines are span lists, or an int k marking where INTRO[k] is typed;
+    the lines after it are its output."""
     w = PAD_X * 2 + COLS * CHAR_W
-    h = TOP + LINE_H * len(lines) + 24
-    out = []
-    for i, spans in enumerate(lines):
-        if spans:
-            out.append(text_row(TOP + LINE_H * i, spans))
-    h += LINE_H
-    total, frames, reboot = timeline()
-    anim_css, anim = animated_line(TOP + LINE_H * len(lines), total, frames)
+    h = TOP + LINE_H * len(lines) + 24 + LINE_H
+    total, frames, reboot, intro, outputs = timeline()
+    css, out, group = [], [], None
+    for i, line in enumerate(lines):
+        y = TOP + LINE_H * i
+        if isinstance(line, int):
+            if group is not None:
+                out.append("</g>")
+            group = line
+            c, a = animated_line(f"i{line}_", y, total, intro[line])
+            css.append(c)
+            out.append(a)
+            css.append(keyframes(f"o{line}", [(outputs[line], total)], total))
+            out.append(f"<g {animated(f'o{line}', total)}>")
+        elif line:
+            out.append(text_row(y, line))
+    if group is not None:
+        out.append("</g>")
+    c, a = animated_line("f", TOP + LINE_H * len(lines), total, frames)
+    css.append(c)
+    out.append(a)
     boot_css, boot = boot_screen(w, h, total, reboot)
+    anim_css, anim = "\n".join(css), ""
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
 <style>
 .t{{font-family:'Courier New',Courier,monospace;font-size:{FONT}px;fill:{TEXT}}}
@@ -360,9 +399,9 @@ def main():
     total, current, longest = streaks(contribution_days(created))
     repos = {r["name"]: r for r in user["repositories"]["nodes"]}
     lines = (
-        [cmd("ls projects/")]
+        [0]
         + projects_lines(repos)
-        + [[], cmd("cat stats.txt")]
+        + [[], 1]
         + stats_lines(user, total, current, longest)
         + [[]]
     )

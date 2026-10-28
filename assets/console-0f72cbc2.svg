@@ -1,0 +1,448 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="912" height="600" viewBox="0 0 912 600">
+<style>
+.t{font-family:'Courier New',Courier,monospace;font-size:15px;fill:#c8a8ff}
+.m{fill:#8b3dff;font-weight:700}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+.cur{animation:blink 1.1s steps(1) infinite}
+@keyframes i0_0{0%{opacity:0}0.0000%{opacity:1}0.5031%{opacity:0}}
+@keyframes i0_1{0%{opacity:0}0.5031%{opacity:1}0.5629%{opacity:0}}
+@keyframes i0_2{0%{opacity:0}0.5629%{opacity:1}0.6728%{opacity:0}}
+@keyframes i0_3{0%{opacity:0}0.6728%{opacity:1}0.7769%{opacity:0}}
+@keyframes i0_4{0%{opacity:0}0.7769%{opacity:1}0.8452%{opacity:0}}
+@keyframes i0_5{0%{opacity:0}0.8452%{opacity:1}0.9304%{opacity:0}}
+@keyframes i0_6{0%{opacity:0}0.9304%{opacity:1}1.0124%{opacity:0}}
+@keyframes i0_7{0%{opacity:0}1.0124%{opacity:1}1.1086%{opacity:0}}
+@keyframes i0_8{0%{opacity:0}1.1086%{opacity:1}1.2144%{opacity:0}}
+@keyframes i0_9{0%{opacity:0}1.2144%{opacity:1}1.2714%{opacity:0}}
+@keyframes i0_10{0%{opacity:0}1.2714%{opacity:1}1.3237%{opacity:0}}
+@keyframes i0_11{0%{opacity:0}1.3237%{opacity:1}1.4328%{opacity:0}}
+@keyframes i0_12{0%{opacity:0}1.4328%{opacity:1}1.5136%{opacity:0}}
+@keyframes i0_13{0%{opacity:0}1.5136%{opacity:1}1.9161%{opacity:0}}
+@keyframes i0_14{0%{opacity:0}1.9161%{opacity:1}100.0000%{opacity:0}}
+@keyframes o0{0%{opacity:0}1.9161%{opacity:1}100.0000%{opacity:0}}
+@keyframes i1_0{0%{opacity:0}1.9161%{opacity:1}2.4192%{opacity:0}}
+@keyframes i1_1{0%{opacity:0}2.4192%{opacity:1}2.5232%{opacity:0}}
+@keyframes i1_2{0%{opacity:0}2.5232%{opacity:1}2.5736%{opacity:0}}
+@keyframes i1_3{0%{opacity:0}2.5736%{opacity:1}2.6553%{opacity:0}}
+@keyframes i1_4{0%{opacity:0}2.6553%{opacity:1}2.7564%{opacity:0}}
+@keyframes i1_5{0%{opacity:0}2.7564%{opacity:1}2.8228%{opacity:0}}
+@keyframes i1_6{0%{opacity:0}2.8228%{opacity:1}2.9397%{opacity:0}}
+@keyframes i1_7{0%{opacity:0}2.9397%{opacity:1}3.0535%{opacity:0}}
+@keyframes i1_8{0%{opacity:0}3.0535%{opacity:1}3.1060%{opacity:0}}
+@keyframes i1_9{0%{opacity:0}3.1060%{opacity:1}3.1581%{opacity:0}}
+@keyframes i1_10{0%{opacity:0}3.1581%{opacity:1}3.2465%{opacity:0}}
+@keyframes i1_11{0%{opacity:0}3.2465%{opacity:1}3.3630%{opacity:0}}
+@keyframes i1_12{0%{opacity:0}3.3630%{opacity:1}3.4401%{opacity:0}}
+@keyframes i1_13{0%{opacity:0}3.4401%{opacity:1}3.5057%{opacity:0}}
+@keyframes i1_14{0%{opacity:0}3.5057%{opacity:1}3.9082%{opacity:0}}
+@keyframes i1_15{0%{opacity:0}3.9082%{opacity:1}100.0000%{opacity:0}}
+@keyframes o1{0%{opacity:0}3.9082%{opacity:1}100.0000%{opacity:0}}
+@keyframes f0{0%{opacity:0}3.9082%{opacity:1}11.4544%{opacity:0}13.6351%{opacity:1}18.6659%{opacity:0}22.8454%{opacity:1}27.8762%{opacity:0}30.7502%{opacity:1}35.7810%{opacity:0}39.6040%{opacity:1}44.6348%{opacity:0}47.1994%{opacity:1}52.2302%{opacity:0}53.4891%{opacity:1}58.5199%{opacity:0}60.4313%{opacity:1}65.4621%{opacity:0}69.6862%{opacity:1}74.7170%{opacity:0}77.1804%{opacity:1}82.2112%{opacity:0}86.7914%{opacity:1}91.8222%{opacity:0}}
+@keyframes f1{0%{opacity:0}11.4544%{opacity:1}11.5344%{opacity:0}13.5848%{opacity:1}13.6100%{opacity:0}58.5199%{opacity:1}58.6264%{opacity:0}60.3810%{opacity:1}60.4062%{opacity:0}}
+@keyframes f2{0%{opacity:0}11.5344%{opacity:1}11.5867%{opacity:0}13.5597%{opacity:1}13.5848%{opacity:0}58.6264%{opacity:1}58.7329%{opacity:0}60.3559%{opacity:1}60.3810%{opacity:0}}
+@keyframes f3{0%{opacity:0}11.5867%{opacity:1}11.6527%{opacity:0}13.5345%{opacity:1}13.5597%{opacity:0}58.7329%{opacity:1}58.8407%{opacity:0}60.3307%{opacity:1}60.3559%{opacity:0}}
+@keyframes f4{0%{opacity:0}11.6527%{opacity:1}11.7338%{opacity:0}13.5094%{opacity:1}13.5345%{opacity:0}58.8407%{opacity:1}58.9090%{opacity:0}60.3056%{opacity:1}60.3307%{opacity:0}}
+@keyframes f5{0%{opacity:0}11.7338%{opacity:1}11.8190%{opacity:0}12.1876%{opacity:1}12.2128%{opacity:0}13.4842%{opacity:1}13.5094%{opacity:0}58.9090%{opacity:1}59.0186%{opacity:0}60.2804%{opacity:1}60.3056%{opacity:0}}
+@keyframes f6{0%{opacity:0}11.8190%{opacity:1}11.8858%{opacity:0}}
+@keyframes f7{0%{opacity:0}11.8858%{opacity:1}12.1876%{opacity:0}}
+@keyframes f8{0%{opacity:0}12.2128%{opacity:1}12.2793%{opacity:0}13.4590%{opacity:1}13.4842%{opacity:0}59.0186%{opacity:1}59.1163%{opacity:0}60.2553%{opacity:1}60.2804%{opacity:0}}
+@keyframes f9{0%{opacity:0}12.2793%{opacity:1}12.3451%{opacity:0}13.4339%{opacity:1}13.4590%{opacity:0}59.1163%{opacity:1}59.1725%{opacity:0}60.2301%{opacity:1}60.2553%{opacity:0}}
+@keyframes f10{0%{opacity:0}12.3451%{opacity:1}12.4277%{opacity:0}59.1725%{opacity:1}59.2239%{opacity:0}}
+@keyframes f11{0%{opacity:0}12.4277%{opacity:1}13.4339%{opacity:0}59.2239%{opacity:1}60.2301%{opacity:0}}
+@keyframes f12{0%{opacity:0}13.6100%{opacity:1}13.6351%{opacity:0}22.8202%{opacity:1}22.8454%{opacity:0}30.7251%{opacity:1}30.7502%{opacity:0}39.5789%{opacity:1}39.6040%{opacity:0}47.1743%{opacity:1}47.1994%{opacity:0}53.4639%{opacity:1}53.4891%{opacity:0}60.4062%{opacity:1}60.4313%{opacity:0}69.6610%{opacity:1}69.6862%{opacity:0}77.1553%{opacity:1}77.1804%{opacity:0}86.7663%{opacity:1}86.7914%{opacity:0}}
+@keyframes f13{0%{opacity:0}18.6659%{opacity:1}18.7366%{opacity:0}22.7951%{opacity:1}22.8202%{opacity:0}35.7810%{opacity:1}35.8590%{opacity:0}39.5537%{opacity:1}39.5789%{opacity:0}65.4621%{opacity:1}65.5135%{opacity:0}69.6359%{opacity:1}69.6610%{opacity:0}}
+@keyframes f14{0%{opacity:0}18.7366%{opacity:1}18.7885%{opacity:0}22.7699%{opacity:1}22.7951%{opacity:0}35.8590%{opacity:1}35.9213%{opacity:0}39.5286%{opacity:1}39.5537%{opacity:0}65.5135%{opacity:1}65.6170%{opacity:0}69.6107%{opacity:1}69.6359%{opacity:0}}
+@keyframes f15{0%{opacity:0}18.7885%{opacity:1}18.8978%{opacity:0}22.7448%{opacity:1}22.7699%{opacity:0}35.9213%{opacity:1}36.0070%{opacity:0}39.5034%{opacity:1}39.5286%{opacity:0}65.6170%{opacity:1}65.6849%{opacity:0}69.5856%{opacity:1}69.6107%{opacity:0}}
+@keyframes f16{0%{opacity:0}18.8978%{opacity:1}18.9873%{opacity:0}22.7196%{opacity:1}22.7448%{opacity:0}36.0070%{opacity:1}36.1265%{opacity:0}39.4783%{opacity:1}39.5034%{opacity:0}65.6849%{opacity:1}65.7429%{opacity:0}69.5604%{opacity:1}69.5856%{opacity:0}}
+@keyframes f17{0%{opacity:0}18.9873%{opacity:1}19.0828%{opacity:0}22.6945%{opacity:1}22.7196%{opacity:0}65.7429%{opacity:1}65.8372%{opacity:0}69.5353%{opacity:1}69.5604%{opacity:0}}
+@keyframes f18{0%{opacity:0}19.0828%{opacity:1}19.1462%{opacity:0}22.6693%{opacity:1}22.6945%{opacity:0}65.8372%{opacity:1}65.9118%{opacity:0}69.5101%{opacity:1}69.5353%{opacity:0}}
+@keyframes f19{0%{opacity:0}19.1462%{opacity:1}19.2664%{opacity:0}22.6442%{opacity:1}22.6693%{opacity:0}65.9118%{opacity:1}65.9670%{opacity:0}66.3304%{opacity:1}66.3555%{opacity:0}69.4850%{opacity:1}69.5101%{opacity:0}}
+@keyframes f20{0%{opacity:0}19.2664%{opacity:1}19.3773%{opacity:0}22.6190%{opacity:1}22.6442%{opacity:0}66.3555%{opacity:1}66.4430%{opacity:0}69.4598%{opacity:1}69.4850%{opacity:0}}
+@keyframes f21{0%{opacity:0}19.3773%{opacity:1}19.4361%{opacity:0}22.5939%{opacity:1}22.6190%{opacity:0}66.4430%{opacity:1}66.5051%{opacity:0}69.4347%{opacity:1}69.4598%{opacity:0}}
+@keyframes f22{0%{opacity:0}19.4361%{opacity:1}19.5098%{opacity:0}22.5687%{opacity:1}22.5939%{opacity:0}66.5051%{opacity:1}66.5747%{opacity:0}69.4095%{opacity:1}69.4347%{opacity:0}}
+@keyframes f23{0%{opacity:0}19.5098%{opacity:1}19.6110%{opacity:0}22.5436%{opacity:1}22.5687%{opacity:0}66.5747%{opacity:1}66.6751%{opacity:0}69.3843%{opacity:1}69.4095%{opacity:0}}
+@keyframes f24{0%{opacity:0}19.6110%{opacity:1}19.7114%{opacity:0}22.5184%{opacity:1}22.5436%{opacity:0}66.6751%{opacity:1}66.7574%{opacity:0}69.3592%{opacity:1}69.3843%{opacity:0}}
+@keyframes f25{0%{opacity:0}19.7114%{opacity:1}19.8276%{opacity:0}22.4932%{opacity:1}22.5184%{opacity:0}66.7574%{opacity:1}66.8304%{opacity:0}69.3340%{opacity:1}69.3592%{opacity:0}}
+@keyframes f26{0%{opacity:0}19.8276%{opacity:1}19.9077%{opacity:0}22.4681%{opacity:1}22.4932%{opacity:0}66.8304%{opacity:1}66.9141%{opacity:0}69.3089%{opacity:1}69.3340%{opacity:0}}
+@keyframes f27{0%{opacity:0}19.9077%{opacity:1}20.0164%{opacity:0}22.4429%{opacity:1}22.4681%{opacity:0}66.9141%{opacity:1}66.9661%{opacity:0}69.2837%{opacity:1}69.3089%{opacity:0}}
+@keyframes f28{0%{opacity:0}20.0164%{opacity:1}20.1140%{opacity:0}22.4178%{opacity:1}22.4429%{opacity:0}66.9661%{opacity:1}67.0436%{opacity:0}69.2586%{opacity:1}69.2837%{opacity:0}}
+@keyframes f29{0%{opacity:0}20.1140%{opacity:1}20.1856%{opacity:0}22.3926%{opacity:1}22.4178%{opacity:0}67.0436%{opacity:1}67.1235%{opacity:0}69.2334%{opacity:1}69.2586%{opacity:0}}
+@keyframes f30{0%{opacity:0}20.1856%{opacity:1}20.2773%{opacity:0}22.3675%{opacity:1}22.3926%{opacity:0}67.1235%{opacity:1}67.1871%{opacity:0}69.2083%{opacity:1}69.2334%{opacity:0}}
+@keyframes f31{0%{opacity:0}20.2773%{opacity:1}20.3898%{opacity:0}22.3423%{opacity:1}22.3675%{opacity:0}67.1871%{opacity:1}67.2451%{opacity:0}69.1831%{opacity:1}69.2083%{opacity:0}}
+@keyframes f32{0%{opacity:0}20.3898%{opacity:1}20.4997%{opacity:0}22.3172%{opacity:1}22.3423%{opacity:0}67.2451%{opacity:1}67.3587%{opacity:0}69.1580%{opacity:1}69.1831%{opacity:0}}
+@keyframes f33{0%{opacity:0}20.4997%{opacity:1}20.5856%{opacity:0}22.2920%{opacity:1}22.3172%{opacity:0}67.3587%{opacity:1}67.4450%{opacity:0}69.1328%{opacity:1}69.1580%{opacity:0}}
+@keyframes f34{0%{opacity:0}20.5856%{opacity:1}20.6774%{opacity:0}22.2669%{opacity:1}22.2920%{opacity:0}67.4450%{opacity:1}67.5100%{opacity:0}69.1077%{opacity:1}69.1328%{opacity:0}}
+@keyframes f35{0%{opacity:0}20.6774%{opacity:1}20.7301%{opacity:0}22.2417%{opacity:1}22.2669%{opacity:0}67.5100%{opacity:1}67.6030%{opacity:0}69.0825%{opacity:1}69.1077%{opacity:0}}
+@keyframes f36{0%{opacity:0}20.7301%{opacity:1}20.7975%{opacity:0}22.2166%{opacity:1}22.2417%{opacity:0}67.6030%{opacity:1}67.7108%{opacity:0}69.0573%{opacity:1}69.0825%{opacity:0}}
+@keyframes f37{0%{opacity:0}20.7975%{opacity:1}20.9040%{opacity:0}22.1914%{opacity:1}22.2166%{opacity:0}67.7108%{opacity:1}67.7626%{opacity:0}69.0322%{opacity:1}69.0573%{opacity:0}}
+@keyframes f38{0%{opacity:0}20.9040%{opacity:1}20.9835%{opacity:0}22.1662%{opacity:1}22.1914%{opacity:0}67.7626%{opacity:1}67.8142%{opacity:0}69.0070%{opacity:1}69.0322%{opacity:0}}
+@keyframes f39{0%{opacity:0}20.9835%{opacity:1}21.0460%{opacity:0}22.1411%{opacity:1}22.1662%{opacity:0}67.8142%{opacity:1}67.8748%{opacity:0}68.9819%{opacity:1}69.0070%{opacity:0}}
+@keyframes f40{0%{opacity:0}21.0460%{opacity:1}21.1349%{opacity:0}67.8748%{opacity:1}67.9757%{opacity:0}}
+@keyframes f41{0%{opacity:0}21.1349%{opacity:1}22.1411%{opacity:0}67.9757%{opacity:1}68.9819%{opacity:0}}
+@keyframes f42{0%{opacity:0}27.8762%{opacity:1}27.9760%{opacity:0}30.6999%{opacity:1}30.7251%{opacity:0}52.2302%{opacity:1}52.3217%{opacity:0}53.4388%{opacity:1}53.4639%{opacity:0}74.7170%{opacity:1}74.7786%{opacity:0}77.1301%{opacity:1}77.1553%{opacity:0}}
+@keyframes f43{0%{opacity:0}27.9760%{opacity:1}28.0738%{opacity:0}30.6748%{opacity:1}30.6999%{opacity:0}74.7786%{opacity:1}74.8785%{opacity:0}77.1049%{opacity:1}77.1301%{opacity:0}}
+@keyframes f44{0%{opacity:0}28.0738%{opacity:1}28.1505%{opacity:0}30.6496%{opacity:1}30.6748%{opacity:0}74.8785%{opacity:1}74.9766%{opacity:0}77.0798%{opacity:1}77.1049%{opacity:0}}
+@keyframes f45{0%{opacity:0}28.1505%{opacity:1}28.2318%{opacity:0}30.6244%{opacity:1}30.6496%{opacity:0}74.9766%{opacity:1}75.0653%{opacity:0}77.0546%{opacity:1}77.0798%{opacity:0}}
+@keyframes f46{0%{opacity:0}28.2318%{opacity:1}28.3179%{opacity:0}30.5993%{opacity:1}30.6244%{opacity:0}75.0653%{opacity:1}75.1311%{opacity:0}77.0295%{opacity:1}77.0546%{opacity:0}}
+@keyframes f47{0%{opacity:0}28.3179%{opacity:1}28.4230%{opacity:0}30.5741%{opacity:1}30.5993%{opacity:0}75.1311%{opacity:1}75.2501%{opacity:0}77.0043%{opacity:1}77.0295%{opacity:0}}
+@keyframes f48{0%{opacity:0}28.4230%{opacity:1}28.5100%{opacity:0}30.5490%{opacity:1}30.5741%{opacity:0}75.2501%{opacity:1}75.3566%{opacity:0}76.9792%{opacity:1}77.0043%{opacity:0}}
+@keyframes f49{0%{opacity:0}28.5100%{opacity:1}28.5880%{opacity:0}28.9747%{opacity:1}28.9998%{opacity:0}30.5238%{opacity:1}30.5490%{opacity:0}75.3566%{opacity:1}75.4433%{opacity:0}76.9540%{opacity:1}76.9792%{opacity:0}}
+@keyframes f50{0%{opacity:0}28.5880%{opacity:1}28.6728%{opacity:0}}
+@keyframes f51{0%{opacity:0}28.6728%{opacity:1}28.9747%{opacity:0}}
+@keyframes f52{0%{opacity:0}28.9998%{opacity:1}29.0522%{opacity:0}30.4987%{opacity:1}30.5238%{opacity:0}75.4433%{opacity:1}75.5093%{opacity:0}76.9289%{opacity:1}76.9540%{opacity:0}}
+@keyframes f53{0%{opacity:0}29.0522%{opacity:1}29.1056%{opacity:0}30.4735%{opacity:1}30.4987%{opacity:0}75.5093%{opacity:1}75.6053%{opacity:0}76.9037%{opacity:1}76.9289%{opacity:0}}
+@keyframes f54{0%{opacity:0}29.1056%{opacity:1}29.2054%{opacity:0}30.4484%{opacity:1}30.4735%{opacity:0}75.6053%{opacity:1}75.6834%{opacity:0}76.8786%{opacity:1}76.9037%{opacity:0}}
+@keyframes f55{0%{opacity:0}29.2054%{opacity:1}29.3250%{opacity:0}30.4232%{opacity:1}30.4484%{opacity:0}75.6834%{opacity:1}75.7743%{opacity:0}76.8534%{opacity:1}76.8786%{opacity:0}}
+@keyframes f56{0%{opacity:0}29.3250%{opacity:1}29.4171%{opacity:0}75.7743%{opacity:1}75.8472%{opacity:0}}
+@keyframes f57{0%{opacity:0}29.4171%{opacity:1}30.4232%{opacity:0}75.8472%{opacity:1}76.8534%{opacity:0}}
+@keyframes f58{0%{opacity:0}36.1265%{opacity:1}36.2311%{opacity:0}39.4531%{opacity:1}39.4783%{opacity:0}}
+@keyframes f59{0%{opacity:0}36.2311%{opacity:1}36.3194%{opacity:0}39.4279%{opacity:1}39.4531%{opacity:0}}
+@keyframes f60{0%{opacity:0}36.3194%{opacity:1}36.4303%{opacity:0}39.4028%{opacity:1}39.4279%{opacity:0}}
+@keyframes f61{0%{opacity:0}36.4303%{opacity:1}36.4970%{opacity:0}39.3776%{opacity:1}39.4028%{opacity:0}}
+@keyframes f62{0%{opacity:0}36.4970%{opacity:1}36.5834%{opacity:0}39.3525%{opacity:1}39.3776%{opacity:0}}
+@keyframes f63{0%{opacity:0}36.5834%{opacity:1}36.7008%{opacity:0}39.3273%{opacity:1}39.3525%{opacity:0}}
+@keyframes f64{0%{opacity:0}36.7008%{opacity:1}36.7918%{opacity:0}39.3022%{opacity:1}39.3273%{opacity:0}}
+@keyframes f65{0%{opacity:0}36.7918%{opacity:1}36.8745%{opacity:0}39.2770%{opacity:1}39.3022%{opacity:0}}
+@keyframes f66{0%{opacity:0}36.8745%{opacity:1}36.9438%{opacity:0}39.2519%{opacity:1}39.2770%{opacity:0}}
+@keyframes f67{0%{opacity:0}36.9438%{opacity:1}37.0327%{opacity:0}39.2267%{opacity:1}39.2519%{opacity:0}}
+@keyframes f68{0%{opacity:0}37.0327%{opacity:1}37.1504%{opacity:0}39.2016%{opacity:1}39.2267%{opacity:0}}
+@keyframes f69{0%{opacity:0}37.1504%{opacity:1}37.2011%{opacity:0}39.1764%{opacity:1}39.2016%{opacity:0}}
+@keyframes f70{0%{opacity:0}37.2011%{opacity:1}37.3066%{opacity:0}39.1513%{opacity:1}39.1764%{opacity:0}}
+@keyframes f71{0%{opacity:0}37.3066%{opacity:1}37.4147%{opacity:0}39.1261%{opacity:1}39.1513%{opacity:0}}
+@keyframes f72{0%{opacity:0}37.4147%{opacity:1}37.5274%{opacity:0}39.1009%{opacity:1}39.1261%{opacity:0}}
+@keyframes f73{0%{opacity:0}37.5274%{opacity:1}37.6299%{opacity:0}39.0758%{opacity:1}39.1009%{opacity:0}}
+@keyframes f74{0%{opacity:0}37.6299%{opacity:1}37.7372%{opacity:0}39.0506%{opacity:1}39.0758%{opacity:0}}
+@keyframes f75{0%{opacity:0}37.7372%{opacity:1}37.8240%{opacity:0}39.0255%{opacity:1}39.0506%{opacity:0}}
+@keyframes f76{0%{opacity:0}37.8240%{opacity:1}37.9139%{opacity:0}39.0003%{opacity:1}39.0255%{opacity:0}}
+@keyframes f77{0%{opacity:0}37.9139%{opacity:1}37.9942%{opacity:0}}
+@keyframes f78{0%{opacity:0}37.9942%{opacity:1}39.0003%{opacity:0}}
+@keyframes f79{0%{opacity:0}44.6348%{opacity:1}44.6891%{opacity:0}47.1491%{opacity:1}47.1743%{opacity:0}91.8222%{opacity:1}91.9077%{opacity:0}}
+@keyframes f80{0%{opacity:0}44.6891%{opacity:1}44.8007%{opacity:0}47.1240%{opacity:1}47.1491%{opacity:0}91.9077%{opacity:1}91.9810%{opacity:0}}
+@keyframes f81{0%{opacity:0}44.8007%{opacity:1}44.8911%{opacity:0}47.0988%{opacity:1}47.1240%{opacity:0}91.9810%{opacity:1}92.0927%{opacity:0}}
+@keyframes f82{0%{opacity:0}44.8911%{opacity:1}44.9555%{opacity:0}47.0737%{opacity:1}47.0988%{opacity:0}92.0927%{opacity:1}92.2063%{opacity:0}}
+@keyframes f83{0%{opacity:0}44.9555%{opacity:1}45.0414%{opacity:0}47.0485%{opacity:1}47.0737%{opacity:0}92.2063%{opacity:1}92.2579%{opacity:0}}
+@keyframes f84{0%{opacity:0}45.0414%{opacity:1}45.1258%{opacity:0}47.0233%{opacity:1}47.0485%{opacity:0}92.2579%{opacity:1}92.3224%{opacity:0}}
+@keyframes f85{0%{opacity:0}45.1258%{opacity:1}45.2013%{opacity:0}46.9982%{opacity:1}47.0233%{opacity:0}92.3224%{opacity:1}92.3958%{opacity:0}}
+@keyframes f86{0%{opacity:0}45.2013%{opacity:1}45.2759%{opacity:0}46.9730%{opacity:1}46.9982%{opacity:0}92.3958%{opacity:1}92.5156%{opacity:0}}
+@keyframes f87{0%{opacity:0}45.2759%{opacity:1}45.3642%{opacity:0}46.9479%{opacity:1}46.9730%{opacity:0}92.5156%{opacity:1}92.6210%{opacity:0}}
+@keyframes f88{0%{opacity:0}45.3642%{opacity:1}45.4584%{opacity:0}46.9227%{opacity:1}46.9479%{opacity:0}92.6210%{opacity:1}92.6952%{opacity:0}}
+@keyframes f89{0%{opacity:0}45.4584%{opacity:1}45.5518%{opacity:0}46.8976%{opacity:1}46.9227%{opacity:0}}
+@keyframes f90{0%{opacity:0}45.5518%{opacity:1}45.6344%{opacity:0}46.8724%{opacity:1}46.8976%{opacity:0}}
+@keyframes f91{0%{opacity:0}45.6344%{opacity:1}45.6867%{opacity:0}46.8473%{opacity:1}46.8724%{opacity:0}}
+@keyframes f92{0%{opacity:0}45.6867%{opacity:1}45.7532%{opacity:0}46.8221%{opacity:1}46.8473%{opacity:0}}
+@keyframes f93{0%{opacity:0}45.7532%{opacity:1}45.8160%{opacity:0}}
+@keyframes f94{0%{opacity:0}45.8160%{opacity:1}46.8221%{opacity:0}}
+@keyframes f95{0%{opacity:0}52.3217%{opacity:1}52.4326%{opacity:0}}
+@keyframes f96{0%{opacity:0}52.4326%{opacity:1}53.4388%{opacity:0}}
+@keyframes f97{0%{opacity:0}65.9670%{opacity:1}66.0285%{opacity:0}}
+@keyframes f98{0%{opacity:0}66.0285%{opacity:1}66.3304%{opacity:0}}
+@keyframes f99{0%{opacity:0}82.2112%{opacity:1}82.3059%{opacity:0}86.7411%{opacity:1}86.7663%{opacity:0}}
+@keyframes f100{0%{opacity:0}82.3059%{opacity:1}82.3604%{opacity:0}86.7160%{opacity:1}86.7411%{opacity:0}}
+@keyframes f101{0%{opacity:0}82.3604%{opacity:1}82.4317%{opacity:0}86.6908%{opacity:1}86.7160%{opacity:0}}
+@keyframes f102{0%{opacity:0}82.4317%{opacity:1}82.5502%{opacity:0}86.6657%{opacity:1}86.6908%{opacity:0}}
+@keyframes f103{0%{opacity:0}82.5502%{opacity:1}82.6622%{opacity:0}86.6405%{opacity:1}86.6657%{opacity:0}}
+@keyframes f104{0%{opacity:0}82.6622%{opacity:1}82.7341%{opacity:0}86.6154%{opacity:1}86.6405%{opacity:0}}
+@keyframes f105{0%{opacity:0}82.7341%{opacity:1}82.8448%{opacity:0}86.5902%{opacity:1}86.6154%{opacity:0}}
+@keyframes f106{0%{opacity:0}82.8448%{opacity:1}82.9170%{opacity:0}86.5650%{opacity:1}86.5902%{opacity:0}}
+@keyframes f107{0%{opacity:0}82.9170%{opacity:1}83.0335%{opacity:0}86.5399%{opacity:1}86.5650%{opacity:0}}
+@keyframes f108{0%{opacity:0}83.0335%{opacity:1}83.1362%{opacity:0}86.5147%{opacity:1}86.5399%{opacity:0}}
+@keyframes f109{0%{opacity:0}83.1362%{opacity:1}83.2158%{opacity:0}86.4896%{opacity:1}86.5147%{opacity:0}}
+@keyframes f110{0%{opacity:0}83.2158%{opacity:1}83.2839%{opacity:0}86.4644%{opacity:1}86.4896%{opacity:0}}
+@keyframes f111{0%{opacity:0}83.2839%{opacity:1}83.3348%{opacity:0}86.4393%{opacity:1}86.4644%{opacity:0}}
+@keyframes f112{0%{opacity:0}83.3348%{opacity:1}83.4470%{opacity:0}86.4141%{opacity:1}86.4393%{opacity:0}}
+@keyframes f113{0%{opacity:0}83.4470%{opacity:1}83.5000%{opacity:0}86.3890%{opacity:1}86.4141%{opacity:0}}
+@keyframes f114{0%{opacity:0}83.5000%{opacity:1}83.6080%{opacity:0}86.3638%{opacity:1}86.3890%{opacity:0}}
+@keyframes f115{0%{opacity:0}83.6080%{opacity:1}83.7260%{opacity:0}86.3387%{opacity:1}86.3638%{opacity:0}}
+@keyframes f116{0%{opacity:0}83.7260%{opacity:1}83.8165%{opacity:0}86.3135%{opacity:1}86.3387%{opacity:0}}
+@keyframes f117{0%{opacity:0}83.8165%{opacity:1}83.8789%{opacity:0}86.2884%{opacity:1}86.3135%{opacity:0}}
+@keyframes f118{0%{opacity:0}83.8789%{opacity:1}83.9903%{opacity:0}86.2632%{opacity:1}86.2884%{opacity:0}}
+@keyframes f119{0%{opacity:0}83.9903%{opacity:1}84.1092%{opacity:0}86.2380%{opacity:1}86.2632%{opacity:0}}
+@keyframes f120{0%{opacity:0}84.1092%{opacity:1}84.2091%{opacity:0}86.2129%{opacity:1}86.2380%{opacity:0}}
+@keyframes f121{0%{opacity:0}84.2091%{opacity:1}84.2953%{opacity:0}86.1877%{opacity:1}86.2129%{opacity:0}}
+@keyframes f122{0%{opacity:0}84.2953%{opacity:1}84.3722%{opacity:0}86.1626%{opacity:1}86.1877%{opacity:0}}
+@keyframes f123{0%{opacity:0}84.3722%{opacity:1}84.4469%{opacity:0}86.1374%{opacity:1}86.1626%{opacity:0}}
+@keyframes f124{0%{opacity:0}84.4469%{opacity:1}84.5117%{opacity:0}86.1123%{opacity:1}86.1374%{opacity:0}}
+@keyframes f125{0%{opacity:0}84.5117%{opacity:1}84.6095%{opacity:0}86.0871%{opacity:1}86.1123%{opacity:0}}
+@keyframes f126{0%{opacity:0}84.6095%{opacity:1}84.6903%{opacity:0}86.0620%{opacity:1}86.0871%{opacity:0}}
+@keyframes f127{0%{opacity:0}84.6903%{opacity:1}84.7543%{opacity:0}86.0368%{opacity:1}86.0620%{opacity:0}}
+@keyframes f128{0%{opacity:0}84.7543%{opacity:1}84.8120%{opacity:0}86.0117%{opacity:1}86.0368%{opacity:0}}
+@keyframes f129{0%{opacity:0}84.8120%{opacity:1}84.9092%{opacity:0}85.9865%{opacity:1}86.0117%{opacity:0}}
+@keyframes f130{0%{opacity:0}84.9092%{opacity:1}84.9803%{opacity:0}}
+@keyframes f131{0%{opacity:0}84.9803%{opacity:1}85.9865%{opacity:0}}
+@keyframes f132{0%{opacity:0}92.6952%{opacity:1}92.7605%{opacity:0}}
+@keyframes f133{0%{opacity:0}92.7605%{opacity:1}92.8583%{opacity:0}}
+@keyframes f134{0%{opacity:0}92.8583%{opacity:1}92.9676%{opacity:0}}
+@keyframes f135{0%{opacity:0}92.9676%{opacity:1}93.0836%{opacity:0}}
+@keyframes f136{0%{opacity:0}93.0836%{opacity:1}93.1581%{opacity:0}}
+@keyframes f137{0%{opacity:0}93.1581%{opacity:1}93.5606%{opacity:0}}
+@keyframes boot{0%{opacity:0}93.5606%{opacity:1}100.0000%{opacity:0}}
+@keyframes b0_0{0%{opacity:0}93.5606%{opacity:1}94.4661%{opacity:0}}
+@keyframes b1_0{0%{opacity:0}93.5606%{opacity:1}94.4661%{opacity:0}}
+@keyframes b2_0{0%{opacity:0}95.0698%{opacity:1}100.0000%{opacity:0}}
+@keyframes b3_0{0%{opacity:0}95.3717%{opacity:1}100.0000%{opacity:0}}
+@keyframes b4_0{0%{opacity:0}95.6735%{opacity:1}95.7943%{opacity:0}}
+@keyframes b4_1{0%{opacity:0}95.7943%{opacity:1}95.9150%{opacity:0}}
+@keyframes b4_2{0%{opacity:0}95.9150%{opacity:1}96.0357%{opacity:0}}
+@keyframes b4_3{0%{opacity:0}96.0357%{opacity:1}96.1565%{opacity:0}}
+@keyframes b4_4{0%{opacity:0}96.1565%{opacity:1}96.2772%{opacity:0}}
+@keyframes b4_5{0%{opacity:0}96.2772%{opacity:1}100.0000%{opacity:0}}
+@keyframes b6_0{0%{opacity:0}96.4784%{opacity:1}100.0000%{opacity:0}}
+@keyframes b7_0{0%{opacity:0}96.8809%{opacity:1}100.0000%{opacity:0}}
+@keyframes b8_0{0%{opacity:0}97.1324%{opacity:1}100.0000%{opacity:0}}
+@keyframes b9_0{0%{opacity:0}97.3840%{opacity:1}100.0000%{opacity:0}}
+@keyframes b10_0{0%{opacity:0}97.6858%{opacity:1}100.0000%{opacity:0}}
+@keyframes b11_0{0%{opacity:0}97.9374%{opacity:1}98.0581%{opacity:0}}
+@keyframes b11_1{0%{opacity:0}98.0581%{opacity:1}98.1789%{opacity:0}}
+@keyframes b11_2{0%{opacity:0}98.1789%{opacity:1}98.2996%{opacity:0}}
+@keyframes b11_3{0%{opacity:0}98.2996%{opacity:1}98.4203%{opacity:0}}
+@keyframes b11_4{0%{opacity:0}98.4203%{opacity:1}98.5411%{opacity:0}}
+@keyframes b11_5{0%{opacity:0}98.5411%{opacity:1}98.6618%{opacity:0}}
+@keyframes b11_6{0%{opacity:0}98.6618%{opacity:1}98.7825%{opacity:0}}
+@keyframes b11_7{0%{opacity:0}98.7825%{opacity:1}98.9033%{opacity:0}}
+@keyframes b11_8{0%{opacity:0}98.9033%{opacity:1}99.0240%{opacity:0}}
+@keyframes b11_9{0%{opacity:0}99.0240%{opacity:1}99.1448%{opacity:0}}
+@keyframes b11_10{0%{opacity:0}99.1448%{opacity:1}100.0000%{opacity:0}}
+@keyframes b13_0{0%{opacity:0}99.3963%{opacity:1}100.0000%{opacity:0}}
+</style>
+<defs><pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="2" fill="#000" fill-opacity=".35"/></pattern></defs>
+<rect x="1.5" y="1.5" width="909" height="597" fill="#0a0a0a" stroke="#8b3dff" stroke-width="3"/>
+<rect x="7" y="7" width="898" height="586" fill="none" stroke="#8b3dff" stroke-width="1"/>
+<rect x="7" y="7" width="898" height="28" fill="#8b3dff"/>
+<text x="456.0" y="26" text-anchor="middle" class="t" style="fill:#0a0a0a;font-weight:700">severnbli@github: ~</text>
+<text x="24" y="70" class="t" xml:space="preserve" opacity="0" style="animation:i0_0 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan><tspan class="m cur">&#9608;</tspan></text>
+<text x="24" y="70" class="t" xml:space="preserve" opacity="0" style="animation:i0_1 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>l<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="70" class="t" xml:space="preserve" opacity="0" style="animation:i0_2 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>ls<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="70" class="t" xml:space="preserve" opacity="0" style="animation:i0_3 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>ls <tspan class="m">&#9608;</tspan></text>
+<text x="24" y="70" class="t" xml:space="preserve" opacity="0" style="animation:i0_4 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>ls p<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="70" class="t" xml:space="preserve" opacity="0" style="animation:i0_5 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>ls pr<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="70" class="t" xml:space="preserve" opacity="0" style="animation:i0_6 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>ls pro<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="70" class="t" xml:space="preserve" opacity="0" style="animation:i0_7 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>ls proj<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="70" class="t" xml:space="preserve" opacity="0" style="animation:i0_8 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>ls proje<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="70" class="t" xml:space="preserve" opacity="0" style="animation:i0_9 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>ls projec<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="70" class="t" xml:space="preserve" opacity="0" style="animation:i0_10 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>ls project<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="70" class="t" xml:space="preserve" opacity="0" style="animation:i0_11 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>ls projects<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="70" class="t" xml:space="preserve" opacity="0" style="animation:i0_12 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>ls projects/<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="70" class="t" xml:space="preserve" opacity="0" style="animation:i0_13 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>ls projects/<tspan class="m cur">&#9608;</tspan></text>
+<text x="24" y="70" class="t" xml:space="preserve" opacity="0" style="animation:i0_14 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>ls projects/</text>
+<g opacity="0" style="animation:o0 198.78s steps(1,end) infinite">
+<text x="24" y="92" class="t" xml:space="preserve">localization-codegen/</text>
+<text x="231" y="92" class="t" xml:space="preserve">*1</text>
+<text x="276" y="92" class="t" xml:space="preserve">C#</text>
+<text x="438" y="92" class="t" xml:space="preserve">C# classes and properties generator from Unity</text>
+<text x="438" y="114" class="t" xml:space="preserve">Localization tables</text>
+<text x="24" y="136" class="t" xml:space="preserve">bell-timer/</text>
+<text x="231" y="136" class="t" xml:space="preserve">*0</text>
+<text x="276" y="136" class="t" xml:space="preserve">Kotlin, C++</text>
+<text x="438" y="136" class="t" xml:space="preserve">Programmable bell schedule on ESP32</text>
+
+<text x="24" y="180" class="t" xml:space="preserve">nAlbum/</text>
+<text x="231" y="180" class="t" xml:space="preserve">*0</text>
+<text x="276" y="180" class="t" xml:space="preserve">C#</text>
+<text x="438" y="180" class="t" xml:space="preserve">Telegram bot for creating and sharing photo and</text>
+<text x="438" y="202" class="t" xml:space="preserve">video albums</text>
+<text x="24" y="224" class="t" xml:space="preserve">dmb-timers/</text>
+<text x="231" y="224" class="t" xml:space="preserve">*0</text>
+<text x="276" y="224" class="t" xml:space="preserve">HTML, JavaScript</text>
+<text x="438" y="224" class="t" xml:space="preserve">A website for posting demob timers</text>
+
+<text x="24" y="268" class="t" xml:space="preserve">rockit/</text>
+<text x="231" y="268" class="t" xml:space="preserve">*0</text>
+<text x="276" y="268" class="t" xml:space="preserve">C#</text>
+<text x="438" y="268" class="t" xml:space="preserve">Unity 2D puzzle-platformer about putting order in</text>
+<text x="438" y="290" class="t" xml:space="preserve">space</text>
+</g>
+<text x="24" y="334" class="t" xml:space="preserve" opacity="0" style="animation:i1_0 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan><tspan class="m cur">&#9608;</tspan></text>
+<text x="24" y="334" class="t" xml:space="preserve" opacity="0" style="animation:i1_1 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>c<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="334" class="t" xml:space="preserve" opacity="0" style="animation:i1_2 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>ca<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="334" class="t" xml:space="preserve" opacity="0" style="animation:i1_3 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>cat<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="334" class="t" xml:space="preserve" opacity="0" style="animation:i1_4 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>cat <tspan class="m">&#9608;</tspan></text>
+<text x="24" y="334" class="t" xml:space="preserve" opacity="0" style="animation:i1_5 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>cat s<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="334" class="t" xml:space="preserve" opacity="0" style="animation:i1_6 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>cat st<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="334" class="t" xml:space="preserve" opacity="0" style="animation:i1_7 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>cat sta<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="334" class="t" xml:space="preserve" opacity="0" style="animation:i1_8 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>cat stat<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="334" class="t" xml:space="preserve" opacity="0" style="animation:i1_9 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>cat stats<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="334" class="t" xml:space="preserve" opacity="0" style="animation:i1_10 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>cat stats.<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="334" class="t" xml:space="preserve" opacity="0" style="animation:i1_11 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>cat stats.t<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="334" class="t" xml:space="preserve" opacity="0" style="animation:i1_12 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>cat stats.tx<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="334" class="t" xml:space="preserve" opacity="0" style="animation:i1_13 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>cat stats.txt<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="334" class="t" xml:space="preserve" opacity="0" style="animation:i1_14 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>cat stats.txt<tspan class="m cur">&#9608;</tspan></text>
+<text x="24" y="334" class="t" xml:space="preserve" opacity="0" style="animation:i1_15 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>cat stats.txt</text>
+<g opacity="0" style="animation:o1 198.78s steps(1,end) infinite">
+<text x="24" y="356" class="t" xml:space="preserve">contributions ...... 11574</text>
+<text x="24" y="378" class="t" xml:space="preserve">current streak ..... 10 days</text>
+<text x="24" y="400" class="t" xml:space="preserve">longest streak ..... 60 days</text>
+<text x="24" y="422" class="t" xml:space="preserve">commits (1y) ....... 9442</text>
+<text x="24" y="444" class="t" xml:space="preserve">pull requests ...... 198</text>
+<text x="24" y="466" class="t" xml:space="preserve">issues ............. 39</text>
+<text x="24" y="488" class="t" xml:space="preserve">stars .............. 3</text>
+<text x="24" y="510" class="t" xml:space="preserve">repositories ....... 31</text>
+</g>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f0 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan><tspan class="m cur">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f1 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>r<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f2 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>rm<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f3 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>rm <tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f4 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>rm -<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f5 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>rm -r<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f6 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>rm -rd<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f7 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>rm -rd<tspan class="m cur">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f8 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>rm -rf<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f9 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>rm -rf <tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f10 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>rm -rf *<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f11 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>rm -rf *<tspan class="m cur">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f12 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan><tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f13 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>g<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f14 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>gi<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f15 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f16 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git <tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f17 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git p<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f18 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git pu<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f19 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git pus<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f20 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git push<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f21 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git push <tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f22 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git push -<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f23 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git push --<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f24 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git push --f<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f25 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git push --fo<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f26 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git push --for<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f27 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git push --forc<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f28 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git push --force<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f29 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git push --force <tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f30 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git push --force o<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f31 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git push --force or<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f32 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git push --force ori<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f33 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git push --force orig<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f34 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git push --force origi<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f35 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git push --force origin<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f36 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git push --force origin <tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f37 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git push --force origin m<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f38 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git push --force origin ma<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f39 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git push --force origin mai<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f40 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git push --force origin main<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f41 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git push --force origin main<tspan class="m cur">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f42 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>:<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f43 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>:(<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f44 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>:()<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f45 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>:(){<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f46 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>:(){ <tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f47 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>:(){ :<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f48 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>:(){ :|<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f49 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>:(){ :|:<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f50 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>:(){ :|:^<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f51 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>:(){ :|:^<tspan class="m cur">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f52 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>:(){ :|:&amp;<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f53 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>:(){ :|:&amp; <tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f54 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>:(){ :|:&amp; }<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f55 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>:(){ :|:&amp; };<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f56 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>:(){ :|:&amp; };:<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f57 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>:(){ :|:&amp; };:<tspan class="m cur">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f58 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git a<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f59 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git ad<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f60 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git add<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f61 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git add <tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f62 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git add .<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f63 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git add .e<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f64 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git add .en<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f65 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git add .env<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f66 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git add .env <tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f67 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git add .env &amp;<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f68 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git add .env &amp;&amp;<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f69 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git add .env &amp;&amp; <tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f70 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git add .env &amp;&amp; g<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f71 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git add .env &amp;&amp; gi<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f72 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git add .env &amp;&amp; git<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f73 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git add .env &amp;&amp; git <tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f74 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git add .env &amp;&amp; git p<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f75 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git add .env &amp;&amp; git pu<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f76 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git add .env &amp;&amp; git pus<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f77 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git add .env &amp;&amp; git push<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f78 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git add .env &amp;&amp; git push<tspan class="m cur">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f79 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>s<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f80 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>sh<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f81 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>shu<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f82 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>shut<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f83 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>shutd<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f84 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>shutdo<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f85 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>shutdow<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f86 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>shutdown<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f87 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>shutdown <tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f88 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>shutdown -<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f89 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>shutdown -h<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f90 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>shutdown -h <tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f91 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>shutdown -h n<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f92 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>shutdown -h no<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f93 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>shutdown -h now<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f94 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>shutdown -h now<tspan class="m cur">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f95 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>:]<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f96 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>:]<tspan class="m cur">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f97 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git pusj<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f98 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>git pusj<tspan class="m cur">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f99 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>y<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f100 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>yo<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f101 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f102 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you <tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f103 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you s<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f104 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you st<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f105 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you sti<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f106 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you stil<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f107 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you still<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f108 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you still <tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f109 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you still h<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f110 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you still he<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f111 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you still her<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f112 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you still here<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f113 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you still here?<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f114 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you still here? <tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f115 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you still here? c<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f116 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you still here? co<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f117 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you still here? con<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f118 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you still here? cong<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f119 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you still here? congr<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f120 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you still here? congra<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f121 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you still here? congrat<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f122 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you still here? congratu<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f123 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you still here? congratul<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f124 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you still here? congratula<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f125 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you still here? congratulat<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f126 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you still here? congratulati<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f127 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you still here? congratulatio<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f128 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you still here? congratulation<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f129 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you still here? congratulations<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f130 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you still here? congratulations!<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f131 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>you still here? congratulations!<tspan class="m cur">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f132 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>shutdown -r<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f133 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>shutdown -r <tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f134 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>shutdown -r n<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f135 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>shutdown -r no<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f136 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>shutdown -r now<tspan class="m">&#9608;</tspan></text>
+<text x="24" y="554" class="t" xml:space="preserve" opacity="0" style="animation:f137 198.78s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>shutdown -r now<tspan class="m cur">&#9608;</tspan></text>
+
+<rect x="7" y="7" width="898" height="586" fill="#0a0a0a" opacity="0" style="animation:boot 198.78s steps(1,end) infinite"/>
+<text x="24" y="40" class="t" xml:space="preserve" opacity="0" style="animation:b0_0 198.78s steps(1,end) infinite">Broadcast message from severnbli@github (pts/0):</text>
+<text x="24" y="62" class="t" xml:space="preserve" opacity="0" style="animation:b1_0 198.78s steps(1,end) infinite">The system is going down for reboot NOW!</text>
+<text x="24" y="40" class="t" xml:space="preserve" opacity="0" style="animation:b2_0 198.78s steps(1,end) infinite">SEVERNBLI BIOS v1.87   (C) 1987 Severnbli Megatrends</text>
+<text x="24" y="62" class="t" xml:space="preserve" opacity="0" style="animation:b3_0 198.78s steps(1,end) infinite">CPU: Intel 80486DX @ 33 MHz</text>
+<text x="24" y="84" class="t" xml:space="preserve" opacity="0" style="animation:b4_0 198.78s steps(1,end) infinite">Memory Test: 0K</text>
+<text x="24" y="84" class="t" xml:space="preserve" opacity="0" style="animation:b4_1 198.78s steps(1,end) infinite">Memory Test: 128K</text>
+<text x="24" y="84" class="t" xml:space="preserve" opacity="0" style="animation:b4_2 198.78s steps(1,end) infinite">Memory Test: 256K</text>
+<text x="24" y="84" class="t" xml:space="preserve" opacity="0" style="animation:b4_3 198.78s steps(1,end) infinite">Memory Test: 384K</text>
+<text x="24" y="84" class="t" xml:space="preserve" opacity="0" style="animation:b4_4 198.78s steps(1,end) infinite">Memory Test: 512K</text>
+<text x="24" y="84" class="t" xml:space="preserve" opacity="0" style="animation:b4_5 198.78s steps(1,end) infinite">Memory Test: 640K OK</text>
+<text x="24" y="128" class="t" xml:space="preserve" opacity="0" style="animation:b6_0 198.78s steps(1,end) infinite">Booting severnbli-os from /dev/github ...</text>
+<text x="24" y="150" class="t" xml:space="preserve" opacity="0" style="animation:b7_0 198.78s steps(1,end) infinite"><tspan class="m">[  OK  ]</tspan> Mounted ~/projects.</text>
+<text x="24" y="172" class="t" xml:space="preserve" opacity="0" style="animation:b8_0 198.78s steps(1,end) infinite"><tspan class="m">[  OK  ]</tspan> Loaded stats.txt.</text>
+<text x="24" y="194" class="t" xml:space="preserve" opacity="0" style="animation:b9_0 198.78s steps(1,end) infinite"><tspan class="m">[ FAIL ]</tspan> Failed to find .env (pushed to remote).</text>
+<text x="24" y="216" class="t" xml:space="preserve" opacity="0" style="animation:b10_0 198.78s steps(1,end) infinite"><tspan class="m">[  OK  ]</tspan> Started GitHub Profile Daemon.</text>
+<text x="24" y="238" class="t" xml:space="preserve" opacity="0" style="animation:b11_0 198.78s steps(1,end) infinite">Loading [                    ]   0%</text>
+<text x="24" y="238" class="t" xml:space="preserve" opacity="0" style="animation:b11_1 198.78s steps(1,end) infinite">Loading [##                  ]  10%</text>
+<text x="24" y="238" class="t" xml:space="preserve" opacity="0" style="animation:b11_2 198.78s steps(1,end) infinite">Loading [####                ]  20%</text>
+<text x="24" y="238" class="t" xml:space="preserve" opacity="0" style="animation:b11_3 198.78s steps(1,end) infinite">Loading [######              ]  30%</text>
+<text x="24" y="238" class="t" xml:space="preserve" opacity="0" style="animation:b11_4 198.78s steps(1,end) infinite">Loading [########            ]  40%</text>
+<text x="24" y="238" class="t" xml:space="preserve" opacity="0" style="animation:b11_5 198.78s steps(1,end) infinite">Loading [##########          ]  50%</text>
+<text x="24" y="238" class="t" xml:space="preserve" opacity="0" style="animation:b11_6 198.78s steps(1,end) infinite">Loading [############        ]  60%</text>
+<text x="24" y="238" class="t" xml:space="preserve" opacity="0" style="animation:b11_7 198.78s steps(1,end) infinite">Loading [##############      ]  70%</text>
+<text x="24" y="238" class="t" xml:space="preserve" opacity="0" style="animation:b11_8 198.78s steps(1,end) infinite">Loading [################    ]  80%</text>
+<text x="24" y="238" class="t" xml:space="preserve" opacity="0" style="animation:b11_9 198.78s steps(1,end) infinite">Loading [##################  ]  90%</text>
+<text x="24" y="238" class="t" xml:space="preserve" opacity="0" style="animation:b11_10 198.78s steps(1,end) infinite">Loading [####################] 100%</text>
+<text x="24" y="282" class="t" xml:space="preserve" opacity="0" style="animation:b13_0 198.78s steps(1,end) infinite">severnbli-os login: severnbli</text>
+<rect x="1.5" y="1.5" width="909" height="597" fill="url(#scan)"/>
+</svg>
