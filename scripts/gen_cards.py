@@ -165,7 +165,7 @@ def projects_lines(repos):
         if len(desc) > 3:
             desc[1] = fit(" ".join(desc[1:]), width)
         lines.append([
-            ("p", f"{name}/", 0),
+            ("n", f"{name}/", 0),
             ("", f"*{r['stargazerCount']}", 23),
             ("", ", ".join(langs[:3]) or "-", 28),
             ("", desc[0], DESC_COL),
@@ -302,10 +302,19 @@ def animated_line(y, total, frames):
     return "\n".join(css), "\n".join(out)
 
 
-def span(cls, text, col=None):
-    """A text piece, optionally pinned to a character column."""
-    attrs = (f' class="{cls}"' if cls else "") + (f' x="{PAD_X + col * CHAR_W}"' if col is not None else "")
-    return f"<tspan{attrs}>{escape(text)}</tspan>" if attrs else escape(text)
+def text_row(y, spans):
+    """One row of text. A span with a column starts its own <text> at a fixed x,
+    so columns line up whatever the font width or zoom level."""
+    groups = []
+    for cls, text, *col in spans:
+        if col or not groups:
+            groups.append((col[0] if col else 0, []))
+        groups[-1][1].append(f'<tspan class="{cls}">{escape(text)}</tspan>' if cls else escape(text))
+    return "\n".join(
+        f'<text x="{PAD_X + col * CHAR_W}" y="{y}" class="t" xml:space="preserve">{"".join(body)}</text>'
+        for col, body in groups
+        if any(body)
+    )
 
 
 def render(lines):
@@ -314,8 +323,7 @@ def render(lines):
     out = []
     for i, spans in enumerate(lines):
         if spans:
-            body = "".join(span(*sp) for sp in spans)
-            out.append(f'<text x="{PAD_X}" y="{TOP + LINE_H * i}" class="t" xml:space="preserve">{body}</text>')
+            out.append(text_row(TOP + LINE_H * i, spans))
     h += LINE_H
     total, frames, reboot = timeline()
     anim_css, anim = animated_line(TOP + LINE_H * len(lines), total, frames)
@@ -324,7 +332,7 @@ def render(lines):
 <style>
 .t{{font-family:'Courier New',Courier,monospace;font-size:{FONT}px;fill:{TEXT}}}
 .m{{fill:{MAIN};font-weight:700}}
-.p{{fill:{MAIN};stroke:{MAIN};stroke-width:.6}}
+.n{{fill:{MAIN}}}
 @keyframes blink{{0%,49%{{opacity:1}}50%,100%{{opacity:0}}}}
 .cur{{animation:blink 1.1s steps(1) infinite}}
 {anim_css}
