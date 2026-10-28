@@ -177,21 +177,21 @@
 <rect x="7" y="7" width="898" height="28" fill="#8b3dff"/>
 <text x="456.0" y="26" text-anchor="middle" class="t" style="fill:#0a0a0a;font-weight:700">severnbli@github: ~</text>
 <text x="24" y="70" class="t" xml:space="preserve"><tspan class="m">severnbli@github:~$ </tspan>ls projects/</text>
-<text x="24" y="92" class="t" xml:space="preserve"><tspan class="m">localization-codegen/  </tspan>*1   C#, PowerShell, Shell</text>
-<text x="24" y="114" class="t" xml:space="preserve">    C# classes and properties generator from Unity Localization tables</text>
-<text x="24" y="136" class="t" xml:space="preserve"><tspan class="m">bell-timer/            </tspan>*0   Kotlin, C++, Shell</text>
-<text x="24" y="158" class="t" xml:space="preserve">    Programmable bell schedule on ESP32</text>
-<text x="24" y="180" class="t" xml:space="preserve"><tspan class="m">nAlbum/                </tspan>*0   C#, Dockerfile</text>
-<text x="24" y="202" class="t" xml:space="preserve">    Telegram bot for creating and sharing photo and video albums</text>
-<text x="24" y="224" class="t" xml:space="preserve"><tspan class="m">dmb-timers/            </tspan>*0   HTML, JavaScript, Dockerfile</text>
-<text x="24" y="246" class="t" xml:space="preserve">    A website for posting demob timers</text>
-<text x="24" y="268" class="t" xml:space="preserve"><tspan class="m">rockit/                </tspan>*0   C#, ShaderLab, HLSL</text>
-<text x="24" y="290" class="t" xml:space="preserve">    Unity 2D puzzle-platformer about putting order in space</text>
+<text x="24" y="92" class="t" xml:space="preserve"><tspan class="m">localization-codegen/  </tspan>*1   C#                C# classes and properties generator from Unity</text>
+<text x="24" y="114" class="t" xml:space="preserve">                                              Localization tables</text>
+<text x="24" y="136" class="t" xml:space="preserve"><tspan class="m">bell-timer/            </tspan>*0   Kotlin, C++       Programmable bell schedule on ESP32</text>
+<text x="24" y="158" class="t" xml:space="preserve">                                              </text>
+<text x="24" y="180" class="t" xml:space="preserve"><tspan class="m">nAlbum/                </tspan>*0   C#                Telegram bot for creating and sharing photo and</text>
+<text x="24" y="202" class="t" xml:space="preserve">                                              video albums</text>
+<text x="24" y="224" class="t" xml:space="preserve"><tspan class="m">dmb-timers/            </tspan>*0   HTML, JavaScript  A website for posting demob timers</text>
+<text x="24" y="246" class="t" xml:space="preserve">                                              </text>
+<text x="24" y="268" class="t" xml:space="preserve"><tspan class="m">rockit/                </tspan>*0   C#                Unity 2D puzzle-platformer about putting order in</text>
+<text x="24" y="290" class="t" xml:space="preserve">                                              space</text>
 <text x="24" y="334" class="t" xml:space="preserve"><tspan class="m">severnbli@github:~$ </tspan>cat stats.txt</text>
 <text x="24" y="356" class="t" xml:space="preserve">contributions ...... 11574</text>
 <text x="24" y="378" class="t" xml:space="preserve">current streak ..... 10 days</text>
 <text x="24" y="400" class="t" xml:space="preserve">longest streak ..... 60 days</text>
-<text x="24" y="422" class="t" xml:space="preserve">commits (1y) ....... 9436</text>
+<text x="24" y="422" class="t" xml:space="preserve">commits (1y) ....... 9437</text>
 <text x="24" y="444" class="t" xml:space="preserve">pull requests ...... 198</text>
 <text x="24" y="466" class="t" xml:space="preserve">issues ............. 39</text>
 <text x="24" y="488" class="t" xml:space="preserve">stars .............. 3</text>

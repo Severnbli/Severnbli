@@ -5,13 +5,19 @@ Needs GITHUB_TOKEN in the environment (GraphQL API).
 import json
 import os
 import random
+import textwrap
 import urllib.request
 from datetime import date, datetime, timedelta, timezone
 from xml.sax.saxutils import escape
 
 USER = "Severnbli"
 PROMPT = "severnbli@github:~$ "
-HIDE_LANGS = {"Rich Text Format"}
+# Scripts, build files, shaders and documents rather than the language a project is written in
+HIDE_LANGS = {
+    "Shell", "PowerShell", "Batchfile", "Makefile", "CMake", "Dockerfile", "Procfile", "Nix",
+    "ShaderLab", "HLSL", "GLSL", "Cg",
+    "Rich Text Format", "TeX", "Roff",
+}
 PINS = ["localization-codegen", "bell-timer", "nAlbum", "dmb-timers", "rockit"]
 OUT = os.path.join(os.path.dirname(__file__), "..", "assets", "console.svg")
 
@@ -151,8 +157,14 @@ def projects_lines(repos):
     for name in PINS:
         r = repos[name]
         langs = [e["node"]["name"] for e in r["languages"]["edges"] if e["node"]["name"] not in HIDE_LANGS]
-        lines.append([("m", f"{name + '/':<23}"), ("", f"*{r['stargazerCount']:<4}{', '.join(langs[:3]) or '-'}")])
-        lines.append([("", "    " + fit(r["description"] or "no description", COLS - 4))])
+        left = f"*{r['stargazerCount']:<4}{', '.join(langs[:3]) or '-':<18}"
+        # The description sits right of the columns, wrapped over two lines
+        width = COLS - 23 - len(left)
+        desc = textwrap.wrap(r["description"] or "no description", width) + [""]
+        if len(desc) > 3:
+            desc[1] = fit(" ".join(desc[1:]), width)
+        lines.append([("m", f"{name + '/':<23}"), ("", left + desc[0])])
+        lines.append([("", " " * (23 + len(left)) + desc[1])])
     return lines
 
 
