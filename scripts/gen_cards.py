@@ -1,10 +1,13 @@
-"""Draw the profile console (projects and stats) into assets/console.svg.
+"""Draw the profile console (projects and stats) into assets/console-<hash>.svg.
 
 Needs GITHUB_TOKEN in the environment (GraphQL API).
 """
+import glob
+import hashlib
 import json
 import os
 import random
+import re
 import textwrap
 import urllib.request
 from datetime import date, datetime, timedelta, timezone
@@ -19,7 +22,8 @@ HIDE_LANGS = {
     "Rich Text Format", "TeX", "Roff",
 }
 PINS = ["localization-codegen", "bell-timer", "nAlbum", "dmb-timers", "rockit"]
-OUT = os.path.join(os.path.dirname(__file__), "..", "assets", "console.svg")
+ROOT = os.path.join(os.path.dirname(__file__), "..")
+README = os.path.join(ROOT, "README.md")
 
 BG, MAIN, TEXT, DIM = "#0a0a0a", "#8b3dff", "#c8a8ff", "#5b2a9e"
 COLS = 96
@@ -362,8 +366,17 @@ def main():
         + stats_lines(user, total, current, longest)
         + [[]]
     )
-    with open(OUT, "w") as f:
-        f.write(render(lines))
+    svg = render(lines)
+    # GitHub caches images by URL, so a content hash in the name forces a fresh copy
+    name = f"console-{hashlib.sha1(svg.encode()).hexdigest()[:8]}.svg"
+    for old in glob.glob(os.path.join(ROOT, "assets", "console*.svg")):
+        os.remove(old)
+    with open(os.path.join(ROOT, "assets", name), "w") as f:
+        f.write(svg)
+    with open(README) as f:
+        readme = f.read()
+    with open(README, "w") as f:
+        f.write(re.sub(r"assets/console[^\"]*\.svg", f"assets/{name}", readme))
     print(f"wrote console at {datetime.now(timezone.utc):%Y-%m-%d %H:%M}Z")
 
 

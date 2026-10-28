@@ -1,4 +1,4 @@
-<a href="https://github.com/Severnbli?tab=repositories"><img src="assets/console.svg" width="100%"/></a>
+<a href="https://github.com/Severnbli?tab=repositories"><img src="assets/console-11154c96.svg" width="100%"/></a>
 
 <p align="center">
   <a href="https://severnbli.itch.io/"><img src="https://img.shields.io/badge/itch.io-0a0a0a?style=flat-square&logo=itchdotio&logoColor=8b3dff&labelColor=0a0a0a" /></a>
