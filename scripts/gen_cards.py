@@ -51,25 +51,25 @@ REBOOT_CMD = "shutdown -r now"
 ENTER_S = 0.8  # pause before the reboot command "runs"
 # (appears, disappears or None to stay, text); seconds from the reboot start
 BOOT = [
-    (0.0, 1.8, "Broadcast message from severnbli@github (pts/0):"),
-    (0.0, 1.8, "The system is going down for reboot NOW!"),
-    (3.0, None, "SEVERNBLI BIOS v1.87   (C) 1987 Severnbli Megatrends"),
-    (3.6, None, "CPU: Intel 80486DX @ 33 MHz"),
-    (4.2, None, "Memory Test: {mem}"),
-    (5.8, None, ""),
-    (5.8, None, "Booting severnbli-os from /dev/github ..."),
-    (6.6, None, "[  OK  ] Mounted ~/projects."),
-    (7.1, None, "[  OK  ] Loaded stats.txt."),
-    (7.6, None, "[ FAIL ] Failed to find .env (pushed to remote)."),
-    (8.2, None, "[  OK  ] Started GitHub Profile Daemon."),
-    (8.7, None, "Loading {bar}"),
-    (11.4, None, ""),
-    (11.6, None, "severnbli-os login: severnbli"),
+    (0.0, 1.2, "Broadcast message from severnbli@github (pts/0):"),
+    (0.0, 1.2, "The system is going down for reboot NOW!"),
+    (2.0, None, "SEVERNBLI BIOS v1.87   (C) 1987 Severnbli Megatrends"),
+    (2.3, None, "CPU: Intel 80486DX @ 33 MHz"),
+    (2.6, None, "Memory Test: {mem}"),
+    (3.4, None, ""),
+    (3.4, None, "Booting severnbli-os from /dev/github ..."),
+    (3.8, None, "[  OK  ] Mounted ~/projects."),
+    (4.1, None, "[  OK  ] Loaded stats.txt."),
+    (4.4, None, "[ FAIL ] Failed to find .env (pushed to remote)."),
+    (4.7, None, "[  OK  ] Started GitHub Profile Daemon."),
+    (5.0, None, "Loading {bar}"),
+    (6.3, None, ""),
+    (6.4, None, "severnbli-os login: severnbli"),
 ]
-MEM_STEPS = (4.2, 1.2, ["0K", "128K", "256K", "384K", "512K", "640K OK"])
-BAR_STEPS = (8.7, 2.4, 10)  # start, duration, steps
-BOOT_S = 12.8
-SHUTDOWN_S = 3.0  # BOOT entries before this play at the end of the loop, the rest at its start
+MEM_STEPS = (2.6, 0.7, ["0K", "128K", "256K", "384K", "512K", "640K OK"])
+BAR_STEPS = (5.0, 1.2, 10)  # start, duration, steps
+BOOT_S = 7.6
+SHUTDOWN_S = 2.0  # BOOT entries before this play at the end of the loop, the rest at its start
 
 QUERY = """
 query($login: String!) {
