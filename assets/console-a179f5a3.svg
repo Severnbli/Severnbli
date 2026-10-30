@@ -158,7 +158,7 @@
 <text x="438" y="202" class="t" xml:space="preserve">video albums</text>
 <text x="24" y="224" class="t" xml:space="preserve">dmb-timers/</text>
 <text x="231" y="224" class="t" xml:space="preserve">*0</text>
-<text x="276" y="224" class="t" xml:space="preserve">HTML, JavaScript</text>
+<text x="276" y="224" class="t" xml:space="preserve">JavaScript, HTML</text>
 <text x="438" y="224" class="t" xml:space="preserve">A website for posting demob timers</text>
 
 <text x="24" y="268" class="t" xml:space="preserve">rockit/</text>
@@ -184,10 +184,10 @@
 <text x="24" y="334" class="t" xml:space="preserve" opacity="0" style="animation:i1_14 156.54s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>cat stats.txt<tspan class="m cur">&#9608;</tspan></text>
 <text x="24" y="334" class="t" xml:space="preserve" opacity="0" style="animation:i1_15 156.54s steps(1,end) infinite"><tspan class="m">severnbli@github:~$ </tspan>cat stats.txt</text>
 <g opacity="0" style="animation:o1 156.54s steps(1,end) infinite">
-<text x="24" y="356" class="t" xml:space="preserve">contributions ...... 11588</text>
-<text x="24" y="378" class="t" xml:space="preserve">current streak ..... 11 days</text>
+<text x="24" y="356" class="t" xml:space="preserve">contributions ...... 11654</text>
+<text x="24" y="378" class="t" xml:space="preserve">current streak ..... 12 days</text>
 <text x="24" y="400" class="t" xml:space="preserve">longest streak ..... 60 days</text>
-<text x="24" y="422" class="t" xml:space="preserve">commits (1y) ....... 9554</text>
+<text x="24" y="422" class="t" xml:space="preserve">commits (1y) ....... 9620</text>
 <text x="24" y="444" class="t" xml:space="preserve">pull requests ...... 108</text>
 <text x="24" y="466" class="t" xml:space="preserve">issues ............. 28</text>
 <text x="24" y="488" class="t" xml:space="preserve">stars .............. 2</text>
