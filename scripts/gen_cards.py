@@ -25,7 +25,17 @@ PINS = ["localization-codegen", "bell-timer", "nAlbum", "dmb-timers", "rockit"]
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 README = os.path.join(ROOT, "README.md")
 
-BG, MAIN, TEXT, DIM = "#0a0a0a", "#8b3dff", "#c8a8ff", "#5b2a9e"
+BG = "#0a0a0a"
+# (accent, text) per weekday, Monday first; the card is redrawn every night
+THEMES = [
+    ("#8b3dff", "#c8a8ff"),  # Monday: violet
+    ("#3d8bff", "#a8c8ff"),  # Tuesday: blue
+    ("#00c8a0", "#a0f0dc"),  # Wednesday: teal
+    ("#3ddc4a", "#b0f5b5"),  # Thursday: green
+    ("#ffb000", "#ffe0a0"),  # Friday: amber
+    ("#ff5a3d", "#ffc0b0"),  # Saturday: red
+    ("#ff3d9e", "#ffb0d8"),  # Sunday: pink
+]
 COLS = 96
 FONT, CHAR_W, LINE_H = 15, 9, 22
 PAD_X, TOP = 24, 70
@@ -36,40 +46,40 @@ DESC_COL = 46  # project description column
 COMMANDS = [
     [("type", "you still here? congratulations! :]")],
 ]
-TYPE_S = (0.10, 0.24)  # random delay per typed key
-ERASE_S = 0.05
+TYPE_S = (0.05, 0.12)  # random delay per typed key
+ERASE_S = 0.03
 HOLD_S = 2.0
 PAUSE_S = 3.0  # empty prompt after each command
 LEAD_S = 120.0  # empty prompt before the first command
 # Typed by hand at the start of every loop; their output appears after Enter
 INTRO = ["ls projects/", "cat stats.txt"]
-INTRO_WAIT_S = 1.0  # cursor blinks on an empty prompt before typing
+INTRO_WAIT_S = 0.6  # cursor blinks on an empty prompt before typing
 
 # After the last command the console "reboots": a shutdown broadcast, a black
 # screen, and the loop wraps around to the boot log it starts with.
 REBOOT_CMD = "shutdown -r now"
-ENTER_S = 0.8  # pause before the reboot command "runs"
+ENTER_S = 0.5  # pause before the reboot command "runs"
 # (appears, disappears or None to stay, text); seconds from the reboot start
 BOOT = [
-    (0.0, 1.2, "Broadcast message from severnbli@github (pts/0):"),
-    (0.0, 1.2, "The system is going down for reboot NOW!"),
-    (2.0, None, "SEVERNBLI BIOS v1.87   (C) 1987 Severnbli Megatrends"),
-    (2.3, None, "CPU: Intel 80486DX @ 33 MHz"),
-    (2.6, None, "Memory Test: {mem}"),
-    (3.4, None, ""),
-    (3.4, None, "Booting severnbli-os from /dev/github ..."),
-    (3.8, None, "[  OK  ] Mounted ~/projects."),
-    (4.1, None, "[  OK  ] Loaded stats.txt."),
-    (4.4, None, "[ FAIL ] Failed to find .env (pushed to remote)."),
-    (4.7, None, "[  OK  ] Started GitHub Profile Daemon."),
-    (5.0, None, "Loading {bar}"),
-    (6.3, None, ""),
-    (6.4, None, "severnbli-os login: severnbli"),
+    (0.0, 0.8, "Broadcast message from severnbli@github (pts/0):"),
+    (0.0, 0.8, "The system is going down for reboot NOW!"),
+    (1.2, None, "SEVERNBLI BIOS v1.87   (C) 1987 Severnbli Megatrends"),
+    (1.4, None, "CPU: Intel 80486DX @ 33 MHz"),
+    (1.6, None, "Memory Test: {mem}"),
+    (2.1, None, ""),
+    (2.1, None, "Booting severnbli-os from /dev/github ..."),
+    (2.3, None, "[  OK  ] Mounted ~/projects."),
+    (2.5, None, "[  OK  ] Loaded stats.txt."),
+    (2.7, None, "[ FAIL ] Failed to find .env (pushed to remote)."),
+    (2.9, None, "[  OK  ] Started GitHub Profile Daemon."),
+    (3.1, None, "Loading {bar}"),
+    (3.9, None, ""),
+    (4.0, None, "severnbli-os login: severnbli"),
 ]
-MEM_STEPS = (2.6, 0.7, ["0K", "128K", "256K", "384K", "512K", "640K OK"])
-BAR_STEPS = (5.0, 1.2, 10)  # start, duration, steps
-BOOT_S = 7.6
-SHUTDOWN_S = 2.0  # BOOT entries before this play at the end of the loop, the rest at its start
+MEM_STEPS = (1.6, 0.4, ["0K", "128K", "256K", "384K", "512K", "640K OK"])
+BAR_STEPS = (3.1, 0.7, 10)  # start, duration, steps
+BOOT_S = 4.4
+SHUTDOWN_S = 1.2  # BOOT entries before this play at the end of the loop, the rest at its start
 
 QUERY = """
 query($login: String!) {
@@ -342,7 +352,7 @@ def text_row(y, spans):
     )
 
 
-def render(lines):
+def render(lines, main, text):
     """Lines are span lists, or an int k marking where INTRO[k] is typed;
     the lines after it are its output."""
     w = PAD_X * 2 + COLS * CHAR_W
@@ -371,17 +381,17 @@ def render(lines):
     anim_css, anim = "\n".join(css), ""
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}">
 <style>
-.t{{font-family:'Courier New',Courier,monospace;font-size:{FONT}px;fill:{TEXT}}}
-.m{{fill:{MAIN};font-weight:700}}
+.t{{font-family:'Courier New',Courier,monospace;font-size:{FONT}px;fill:{text}}}
+.m{{fill:{main};font-weight:700}}
 @keyframes blink{{0%,49%{{opacity:1}}50%,100%{{opacity:0}}}}
 .cur{{animation:blink 1.1s steps(1) infinite}}
 {anim_css}
 {boot_css}
 </style>
 <defs><pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="2" fill="#000" fill-opacity=".35"/></pattern></defs>
-<rect x="1.5" y="1.5" width="{w - 3}" height="{h - 3}" fill="{BG}" stroke="{MAIN}" stroke-width="3"/>
-<rect x="7" y="7" width="{w - 14}" height="{h - 14}" fill="none" stroke="{MAIN}" stroke-width="1"/>
-<rect x="7" y="7" width="{w - 14}" height="28" fill="{MAIN}"/>
+<rect x="1.5" y="1.5" width="{w - 3}" height="{h - 3}" fill="{BG}" stroke="{main}" stroke-width="3"/>
+<rect x="7" y="7" width="{w - 14}" height="{h - 14}" fill="none" stroke="{main}" stroke-width="1"/>
+<rect x="7" y="7" width="{w - 14}" height="28" fill="{main}"/>
 <text x="{w / 2}" y="26" text-anchor="middle" class="t" style="fill:{BG};font-weight:700">severnbli@github: ~</text>
 {chr(10).join(out)}
 {anim}
@@ -403,7 +413,8 @@ def main():
         + stats_lines(user, total, current, longest)
         + [[]]
     )
-    svg = render(lines)
+    main_color, text_color = THEMES[datetime.now(timezone.utc).weekday()]
+    svg = render(lines, main_color, text_color)
     # GitHub caches images by URL, so a content hash in the name forces a fresh copy
     name = f"console-{hashlib.sha1(svg.encode()).hexdigest()[:8]}.svg"
     for old in glob.glob(os.path.join(ROOT, "assets", "console*.svg")):
@@ -412,8 +423,11 @@ def main():
         f.write(svg)
     with open(README) as f:
         readme = f.read()
+    readme = re.sub(r"assets/console[^\"]*\.svg", f"assets/{name}", readme)
+    # Badge icons follow the day's accent too
+    readme = re.sub(r"logoColor=[0-9a-f]{6}", f"logoColor={main_color[1:]}", readme)
     with open(README, "w") as f:
-        f.write(re.sub(r"assets/console[^\"]*\.svg", f"assets/{name}", readme))
+        f.write(readme)
     print(f"wrote console at {datetime.now(timezone.utc):%Y-%m-%d %H:%M}Z")
 
 
