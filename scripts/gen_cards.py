@@ -51,8 +51,10 @@ ERASE_S = 0.03
 HOLD_S = 2.0
 PAUSE_S = 3.0  # empty prompt after each command
 LEAD_S = 120.0  # empty prompt before the first command
-# Typed by hand at the start of every loop; their output appears after Enter
-INTRO = ["ls projects/", "cat stats.txt"]
+# Run at the start of every loop; their output appears after Enter.
+# Each is (typed, completed): the keys are typed, then Tab fills in the rest
+INTRO = [("ls p", "ls projects/"), ("cat s", "cat stats.txt")]
+TAB_S = 0.25  # pause before Tab completes the name
 INTRO_WAIT_S = 0.6  # cursor blinks on an empty prompt before typing
 
 # After the last command the console "reboots": a shutdown broadcast, a black
@@ -207,13 +209,16 @@ def timeline():
     rng = random.Random(1)  # fixed seed keeps the svg stable between refreshes
     t = BOOT_S - SHUTDOWN_S
     intro, outputs = [], []
-    for text in INTRO:
+    for prefix, text in INTRO:
+        assert text.startswith(prefix), f"{prefix!r} does not complete to {text!r}"
         f = [(t, t + INTRO_WAIT_S, "", True)]
         t += INTRO_WAIT_S
-        for i in range(1, len(text) + 1):
+        for i in range(1, len(prefix) + 1):
             d = rng.uniform(*TYPE_S)
-            f.append((t, t + d, text[:i], False))
+            f.append((t, t + d, prefix[:i], False))
             t += d
+        f.append((t, t + TAB_S, prefix, False))
+        t += TAB_S
         f.append((t, t + ENTER_S, text, True))
         t += ENTER_S
         intro.append(f)
