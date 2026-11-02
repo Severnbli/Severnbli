@@ -26,6 +26,8 @@ README = os.path.join(ROOT, "README.md")
 
 BG = "#0a0a0a"
 # (accent, text) per weekday, Monday first; the card is redrawn every night
+# Weekday colors and image names follow local time (UTC+3), not UTC
+TZ = timezone(timedelta(hours=3))
 THEMES = [
     ("#8b3dff", "#c8a8ff"),  # Monday: violet
     ("#3d8bff", "#a8c8ff"),  # Tuesday: blue
@@ -417,7 +419,7 @@ def main():
         + stats_lines(user, total, current, longest)
         + [[]]
     )
-    now = datetime.now(timezone.utc)
+    now = datetime.now(TZ)
     main_color, text_color = THEMES[now.weekday()]
     svg = render(lines, main_color, text_color)
     # GitHub caches images by URL, so the generation time in the name forces a fresh copy
@@ -433,7 +435,7 @@ def main():
     readme = re.sub(r"logoColor=[0-9a-f]{6}", f"logoColor={main_color[1:]}", readme)
     with open(README, "w") as f:
         f.write(readme)
-    print(f"wrote {name} at {now:%Y-%m-%d %H:%M}Z")
+    print(f"wrote {name} at {now:%Y-%m-%d %H:%M} UTC+3")
 
 
 if __name__ == "__main__":
