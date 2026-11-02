@@ -1,7 +1,7 @@
-<a href="https://github.com/Severnbli?tab=repositories"><img src="assets/console-4370a55a.svg" width="100%"/></a>
+<a href="https://github.com/Severnbli?tab=repositories"><img src="assets/console-6c3114af.svg" width="100%"/></a>
 
 <p align="center">
-  <a href="https://severnbli.itch.io/"><img src="https://img.shields.io/badge/itch.io-0a0a0a?style=flat-square&logo=itchdotio&logoColor=ff3d9e&labelColor=0a0a0a" /></a>
-  <a href="https://t.me/g_een"><img src="https://img.shields.io/badge/telegram-0a0a0a?style=flat-square&logo=telegram&logoColor=ff3d9e&labelColor=0a0a0a" /></a>
-  <a href="mailto:usevaladbuben@gmail.com"><img src="https://img.shields.io/badge/email-0a0a0a?style=flat-square&logo=gmail&logoColor=ff3d9e&labelColor=0a0a0a" /></a>
+  <a href="https://severnbli.itch.io/"><img src="https://img.shields.io/badge/itch.io-0a0a0a?style=flat-square&logo=itchdotio&logoColor=8b3dff&labelColor=0a0a0a" /></a>
+  <a href="https://t.me/g_een"><img src="https://img.shields.io/badge/telegram-0a0a0a?style=flat-square&logo=telegram&logoColor=8b3dff&labelColor=0a0a0a" /></a>
+  <a href="mailto:usevaladbuben@gmail.com"><img src="https://img.shields.io/badge/email-0a0a0a?style=flat-square&logo=gmail&logoColor=8b3dff&labelColor=0a0a0a" /></a>
 </p>
