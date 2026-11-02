@@ -2,7 +2,8 @@ name: Refresh cards
 
 on:
   schedule:
-    - cron: "15 0 * * *"
+    # 00:15 UTC+3 (cron runs in UTC)
+    - cron: "15 21 * * *"
   workflow_dispatch:
 
 permissions:
