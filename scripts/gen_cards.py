@@ -1,9 +1,8 @@
-"""Draw the profile console (projects and stats) into assets/console-<hash>.svg.
+"""Draw the profile console (projects and stats) into assets/console-<datetime>.svg.
 
 Needs GITHUB_TOKEN in the environment (GraphQL API).
 """
 import glob
-import hashlib
 import json
 import os
 import random
@@ -418,10 +417,11 @@ def main():
         + stats_lines(user, total, current, longest)
         + [[]]
     )
-    main_color, text_color = THEMES[datetime.now(timezone.utc).weekday()]
+    now = datetime.now(timezone.utc)
+    main_color, text_color = THEMES[now.weekday()]
     svg = render(lines, main_color, text_color)
-    # GitHub caches images by URL, so a content hash in the name forces a fresh copy
-    name = f"console-{hashlib.sha1(svg.encode()).hexdigest()[:8]}.svg"
+    # GitHub caches images by URL, so the generation time in the name forces a fresh copy
+    name = f"console-{now:%Y%m%d-%H%M%S}.svg"
     for old in glob.glob(os.path.join(ROOT, "assets", "console*.svg")):
         os.remove(old)
     with open(os.path.join(ROOT, "assets", name), "w") as f:
@@ -433,7 +433,7 @@ def main():
     readme = re.sub(r"logoColor=[0-9a-f]{6}", f"logoColor={main_color[1:]}", readme)
     with open(README, "w") as f:
         f.write(readme)
-    print(f"wrote console at {datetime.now(timezone.utc):%Y-%m-%d %H:%M}Z")
+    print(f"wrote {name} at {now:%Y-%m-%d %H:%M}Z")
 
 
 if __name__ == "__main__":
