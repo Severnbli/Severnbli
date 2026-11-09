@@ -20,7 +20,7 @@ HIDE_LANGS = {
     "ShaderLab", "HLSL", "GLSL", "Cg",
     "Rich Text Format", "TeX", "Roff",
 }
-PINS = ["localization-codegen", "bell-timer", "nAlbum", "dmb-timers", "rockit"]
+PINS = ["localization-codegen", "bell-timer", "nAlbum", "dmb-timers", "rockit", "kTone"]
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 README = os.path.join(ROOT, "README.md")
 
