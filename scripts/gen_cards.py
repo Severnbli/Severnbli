@@ -40,7 +40,7 @@ THEMES = [
 COLS = 96
 FONT, CHAR_W, LINE_H = 15, 9, 22
 PAD_X, TOP = 24, 70
-DESC_COL = 46  # project description column
+STAR_COL, LANG_COL, DESC_COL = 23, 28, 46  # project columns
 
 # Commands typed (and never run) on the last prompt line, in order.
 # Each step is ("type", text), ("erase", count) or ("wait", seconds).
@@ -166,22 +166,25 @@ def fit(text, width):
 
 def projects_lines(repos):
     lines = []
-    for name in PINS:
+    for i, name in enumerate(PINS):
         r = repos[name]
         langs = [e["node"]["name"] for e in r["languages"]["edges"] if e["node"]["name"] not in HIDE_LANGS]
-        # The description sits right of the columns, wrapped over two lines.
+        # Languages and the description wrap within their own columns, and a
+        # project takes as many rows as the taller of the two needs.
         # Columns get fixed x positions so they line up in any monospace font.
-        width = COLS - DESC_COL
-        desc = textwrap.wrap(r["description"] or "no description", width) + [""]
-        if len(desc) > 3:
-            desc[1] = fit(" ".join(desc[1:]), width)
-        lines.append([
-            ("", f"{name}/", 0),
-            ("", f"*{r['stargazerCount']}", 23),
-            ("", ", ".join(langs[:3]) or "-", 28),
-            ("", desc[0], DESC_COL),
-        ])
-        lines.append([("", desc[1], DESC_COL)])
+        lang_w = DESC_COL - LANG_COL - 1
+        lang = textwrap.wrap(", ".join(langs[:3]) or "-", lang_w)
+        lang = [fit(l, lang_w) for l in lang]
+        desc = textwrap.wrap(r["description"] or "no description", COLS - DESC_COL)
+        if i:
+            lines.append([])
+        for row in range(max(len(lang), len(desc))):
+            spans = [("", f"{name}/", 0), ("", f"*{r['stargazerCount']}", STAR_COL)] if not row else []
+            if row < len(lang):
+                spans.append(("", lang[row], LANG_COL))
+            if row < len(desc):
+                spans.append(("", desc[row], DESC_COL))
+            lines.append(spans)
     return lines
 
 
